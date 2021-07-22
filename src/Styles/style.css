@@ -13,18 +13,22 @@ nav {
   background-color: #131921;
   color: white;
   font-family: sans-serif;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
-  padding: 5px;
+  padding: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   min-width: 1250px;
+  gap: 3px;
 }
 
 nav .logo {
@@ -33,6 +37,7 @@ nav .logo {
   width: 130px;
   display: -ms-grid;
   display: grid;
+  border: 1px solid transparent;
   place-items: center;
 }
 
@@ -61,10 +66,6 @@ nav .logo a::after {
   color: white;
 }
 
-nav .location-box {
-  margin-left: 3px;
-}
-
 nav .location-box button {
   padding: 4px 8px 4px 3px;
   background-color: transparent;
@@ -81,6 +82,7 @@ nav .location-box button {
           justify-content: center;
   color: white;
   cursor: pointer;
+  border: 1px solid transparent;
   height: 47px;
 }
 
@@ -90,7 +92,7 @@ nav .location-box button:hover {
 }
 
 nav .location-box button .left {
-  margin: 0 3px 0 0;
+  margin-right: 3px;
 }
 
 nav .location-box button .left svg {
@@ -136,8 +138,6 @@ nav .searchbox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   height: 47px;
   margin-left: auto;
   margin-right: auto;
@@ -148,7 +148,7 @@ nav .searchbox .categories select {
   border: none;
   border-radius: 5px 0 0 5px;
   color: #414141;
-  height: 37px;
+  height: 38.5px;
   font-size: 14px;
   width: 56px;
   cursor: pointer;
@@ -161,12 +161,13 @@ nav .searchbox .categories select option {
 }
 
 nav .searchbox input {
-  height: 36px;
+  height: 38px;
   border: none;
   outline: transparent;
   font-size: 15px;
   background-color: white;
-  padding: 0 10px;
+  padding: 0 13px;
+  min-width: 500px;
   width: 50vw;
 }
 
@@ -175,7 +176,7 @@ nav .searchbox .search-btn {
   border: none;
   border-radius: 0 5px 5px 0;
   color: #414141;
-  height: 36px;
+  height: 38px;
   font-size: 14px;
   cursor: pointer;
   text-align: center;
@@ -195,7 +196,7 @@ nav .searchbox .search-btn .iconify {
 }
 
 nav .country_select {
-  padding: 5px 10px;
+  padding: 10px 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +207,8 @@ nav .country_select {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
 }
 
 nav .country_select:hover {
@@ -238,6 +241,7 @@ nav .sign_in button {
       -ms-flex-pack: start;
           justify-content: flex-start;
   height: 47px;
+  border: 1px solid transparent;
 }
 
 nav .sign_in button:hover {
@@ -257,7 +261,6 @@ nav .sign_in button .list {
 nav .return_orders {
   cursor: pointer;
   height: 47px;
-  margin-left: 2px;
   border-radius: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +275,7 @@ nav .return_orders {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  border: 1px solid transparent;
   padding: 10px;
 }
 
@@ -285,7 +289,7 @@ nav .return_orders .returns {
 }
 
 nav .return_orders .orders {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 nav .cart {
@@ -294,6 +298,8 @@ nav .cart {
   margin-right: 10px;
   height: 47px;
   border-radius: 2px;
+  border: 1px solid transparent;
+  position: relative;
 }
 
 nav .cart:hover {
@@ -312,5 +318,12 @@ nav .cart svg path {
 
 nav .cart svg circle {
   fill: white;
+}
+
+nav .cart .cartItems {
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

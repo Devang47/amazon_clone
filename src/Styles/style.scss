@@ -14,19 +14,22 @@ nav {
   background-color: $navbar-bg;
   color: white;
   font-family: sans-serif;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  padding: 5px;
+  padding: 6px;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   width: 100%;
   min-width: 1250px;
+  gap: 3px;
   .logo {
     padding: 10px 10px 3px 7px;
     margin-left: 3px;
     width: 130px;
     display: grid;
+    border: 1px solid transparent;
     place-items: center;
     &:hover {
       border: 1px solid white;
@@ -51,7 +54,6 @@ nav {
     }
   }
   .location-box {
-    margin-left: 3px;
     button {
       padding: 4px 8px 4px 3px;
       background-color: transparent;
@@ -62,13 +64,14 @@ nav {
       justify-content: center;
       color: white;
       cursor: pointer;
+      border: 1px solid transparent;
       height: 47px;
       &:hover {
         border: 1px solid white;
         border-radius: 2px;
       }
       .left {
-        margin: 0 3px 0 0 ;
+        margin-right: 3px;
         svg {
           padding-top: 8px;
           height: 100%;
@@ -96,7 +99,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
     height: 47px;
     margin-left: auto;
     margin-right: auto;
@@ -106,7 +108,7 @@ nav {
         border: none;
         border-radius: 5px 0 0 5px;
         color: #414141;
-        height: 37px;
+        height: 38.5px;
         font-size: 14px;
         width: 56px;
         cursor: pointer;
@@ -118,12 +120,13 @@ nav {
       }
     }
     input {
-      height: 36px;
+      height: 38px;
       border: none;
       outline: transparent;
       font-size: 15px;
       background-color: white;
-      padding: 0 10px;
+      padding: 0 13px;
+      min-width: 500px;
       width: 50vw;
     }
     .search-btn {
@@ -131,7 +134,7 @@ nav {
       border: none;
       border-radius: 0 5px 5px 0;
       color: #414141;
-      height: 36px;
+      height: 38px;
       font-size: 14px;
       cursor: pointer;
       text-align: center;
@@ -146,15 +149,15 @@ nav {
         transform: scale(2) !important;
       }
     }
-
-
   }
   .country_select {
-    padding: 5px 10px;
+    padding: 10px 10px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
     &:hover {
       border: 1px solid white;
     }
@@ -168,7 +171,6 @@ nav {
   .sign_in {
     button {
       cursor: pointer;
-
       border: none;
       padding: 10px;
       border-radius: 2px;
@@ -179,6 +181,7 @@ nav {
       align-items: flex-start;
       justify-content: flex-start;
       height: 47px;
+      border: 1px solid transparent;
       &:hover {
         border: 1px solid white;
       }
@@ -194,14 +197,13 @@ nav {
   }
   .return_orders {
     cursor: pointer;
-
     height: 47px;
-    margin-left: 2px;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border: 1px solid transparent;
     padding: 10px;
     &:hover {
       border: 1px solid white;
@@ -211,7 +213,7 @@ nav {
       color: rgb(224, 224, 224);
     }
     .orders {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
   .cart {
@@ -220,6 +222,8 @@ nav {
     margin-right: 10px;
     height: 47px;
     border-radius: 2px;
+    border: 1px solid transparent;
+    position: relative;
     &:hover {
       border: 1px solid white;
     }
@@ -233,6 +237,12 @@ nav {
       circle {
         fill: white;
       }
+    }
+    .cartItems {
+      position: absolute;
+      top: 2px;
+      left: 23px;
+      font-weight: 600;
     }
   }
 }
