@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$navbar-bg: #131921;
+
+.bold {
+  font-weight: 600;
+}
+
+nav {
+  background-color: $navbar-bg;
+  color: white;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 1250px;
+  .logo {
+    padding: 10px 10px 3px 7px;
+    margin-left: 3px;
+    width: 130px;
+    display: grid;
+    place-items: center;
+    &:hover {
+      border: 1px solid white;
+      border-radius: 2px;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      img {
+        height: 29px;
+      }
+      position: relative;
+      &::after {
+        position: absolute;
+        left: 91%;
+        top: 17%;
+        content: ".in";
+        font-size: 12px;
+        color: white;
+      }
+    }
+  }
+  .location-box {
+    margin-left: 3px;
+    button {
+      padding: 4px 8px 4px 3px;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      height: 47px;
+      &:hover {
+        border: 1px solid white;
+        border-radius: 2px;
+      }
+      .left {
+        margin: 0 3px 0;
+        svg {
+          padding-top: 8px;
+          height: 100%;
+          color: white;
+          width: 20px;
+          color: white;
+        }
+      }
+      .right {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        .deliverto {
+          font-size: 13px;
+          color: rgb(192, 192, 192);
+        }
+        .location {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    .categories {
+      select {
+        background-color: #f3f3f3;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        color: #414141;
+        height: 37px;
+        font-size: 14px;
+        width: auto;
+        cursor: pointer;
+        text-align: center;
+        padding: 0 6px;
+        option {
+          color: white;
+        }
+      }
+    }
+    input {
+      height: 36px;
+      border: none;
+      outline: transparent;
+      font-size: 15px;
+      background-color: white;
+      padding: 0 10px;
+      width: 30vw;
+    }
+    .search-btn {
+      background-color: #febd69;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      color: #414141;
+      height: 36px;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      padding: 0 10px;
+      &:active {
+        background-color: #ffa229;
+      }
+      .iconify {
+        width: 24px;
+        color: black;
+        transform: scale(2) !important;
+      }
+    }
+  }
+  .country_select {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid white;
+    }
+    .India {
+      svg {
+        width: 23px;
+        height: auto;
+      }
+    }
+  }
+  .sign_in {
+    button {
+      cursor: pointer;
+
+      border: none;
+      padding: 10px;
+      border-radius: 2px;
+      background-color: transparent;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 47px;
+      &:hover {
+        border: 1px solid white;
+      }
+      .hello {
+        font-size: 12px;
+        color: rgb(224, 224, 224);
+      }
+      .list {
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+  .return_orders {
+    cursor: pointer;
+
+    height: 47px;
+    margin-left: 2px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    &:hover {
+      border: 1px solid white;
+    }
+    .returns {
+      font-size: 12px;
+      color: rgb(224, 224, 224);
+    }
+    .orders {
+      font-size: 15px;
+    }
+  }
+  .cart {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    height: 47px;
+    border-radius: 2px;
+    &:hover {
+      border: 1px solid white;
+    }
+    svg {
+      width: 32px;
+      height: auto;
+      fill: white;
+      path {
+        fill: white;
+      }
+      circle {
+        fill: white;
+      }
+    }
+  }
+}
