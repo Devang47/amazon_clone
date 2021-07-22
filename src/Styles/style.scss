@@ -10,6 +10,10 @@ $navbar-bg: #131921;
   font-weight: 600;
 }
 
+body{
+    background-color: #06080a;
+}
+
 nav {
   background-color: $navbar-bg;
   color: white;
@@ -31,24 +35,25 @@ nav {
     display: grid;
     border: 1px solid transparent;
     place-items: center;
+    margin-right: 4px;
     &:hover {
       border: 1px solid white;
       border-radius: 2px;
     }
     a {
       display: block;
-      width: 100%;
       height: 100%;
+      width: 109px;
+      position: relative;
       img {
         height: 29px;
       }
-      position: relative;
       &::after {
         position: absolute;
-        left: 91%;
-        top: 17%;
+        left: 89%;
+        top: 15%;
         content: ".in";
-        font-size: 12px;
+        font-size: 13px;
         color: white;
       }
     }
@@ -91,6 +96,7 @@ nav {
         }
         .location {
           font-size: 14px;
+          white-space: nowrap;
         }
       }
     }
@@ -102,21 +108,27 @@ nav {
     height: 47px;
     margin-left: auto;
     margin-right: auto;
-    .categories {
-      select {
-        background-color: #f3f3f3;
-        border: none;
-        border-radius: 5px 0 0 5px;
-        color: #414141;
-        height: 38.5px;
-        font-size: 14px;
-        width: 56px;
-        cursor: pointer;
-        text-align: center;
-        padding: 0 6px;
-        option {
-          color: white;
-        }
+    width: 100%;
+    min-width: 400px;
+    form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    select {
+      background-color: #f3f3f3;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      color: #414141;
+      height: 38px;
+      font-size: 14px;
+      width: 56px;
+      cursor: pointer;
+      text-align: center;
+      padding: 0 6px;
+      option {
+        color: white;
       }
     }
     input {
@@ -127,7 +139,7 @@ nav {
       background-color: white;
       padding: 0 13px;
       min-width: 500px;
-      width: 50vw;
+      width: 80%;
     }
     .search-btn {
       background-color: #febd69;
@@ -187,10 +199,12 @@ nav {
       }
       .hello {
         font-size: 12px;
+        white-space: nowrap;
         color: rgb(224, 224, 224);
       }
       .list {
         font-size: 14px;
+        white-space: nowrap;
         color: white;
       }
     }
@@ -210,20 +224,22 @@ nav {
     }
     .returns {
       font-size: 12px;
+      white-space: nowrap;
       color: rgb(224, 224, 224);
     }
     .orders {
+      white-space: nowrap;
       font-size: 14px;
     }
   }
   .cart {
     cursor: pointer;
     padding: 10px;
-    margin-right: 10px;
     height: 47px;
     border-radius: 2px;
     border: 1px solid transparent;
     position: relative;
+    width: 137px;
     &:hover {
       border: 1px solid white;
     }
@@ -243,6 +259,12 @@ nav {
       top: 2px;
       left: 23px;
       font-weight: 600;
+    }
+    .cart_text {
+      position: absolute;
+      top: 54%;
+      left: 47%;
+      font-size: 13px;
     }
   }
 }

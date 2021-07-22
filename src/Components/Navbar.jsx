@@ -32,7 +32,6 @@ function Navbar() {
           </button>
         </div>
         <div className="searchbox">
-          <div className="categories">
             <form>
               <label htmlFor="categories">
                 <select name="categories" id="categories">
@@ -51,7 +50,6 @@ function Navbar() {
                 ></span>
               </button>
             </form>
-          </div>
         </div>
         <div className="country_select">
           <div className="India">
@@ -104,6 +102,7 @@ function Navbar() {
             <circle cx="17.5" cy="19.5" r="1.5" fill="#626262" />
           </svg>
           <div className="cartItems">0</div>
+          <div className="cart_text bold">Cart</div>
         </div>
       </nav>
     </>
