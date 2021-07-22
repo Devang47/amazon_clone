@@ -33,22 +33,24 @@ function Navbar() {
         </div>
         <div className="searchbox">
           <div className="categories">
-            <label htmlFor="categories">
-              <select name="categories" id="categories">
-                <option value="All">1</option>
-                <option value="Clothes">2</option>
-                <option value="Deals">3</option>
-                <option value="Appliances">4</option>
-              </select>
-            </label>
-            <input type="text" />
-            <button className="search-btn">
-              <span
-                class="iconify"
-                data-icon="mdi:magnify"
-                data-inline="false"
-              ></span>
-            </button>
+            <form>
+              <label htmlFor="categories">
+                <select name="categories" id="categories">
+                  <option value="All">1</option>
+                  <option value="Clothes">2</option>
+                  <option value="Deals">3</option>
+                  <option value="Appliances">4</option>
+                </select>
+              </label>
+              <input type="text" />
+              <button className="search-btn" typeof='Submit' >
+                <span
+                  class="iconify"
+                  data-icon="mdi:magnify"
+                  data-inline="false"
+                ></span>
+              </button>
+            </form>
           </div>
         </div>
         <div className="country_select">

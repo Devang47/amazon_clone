@@ -90,14 +90,14 @@ nav .location-box button:hover {
 }
 
 nav .location-box button .left {
-  margin: 0 3px 0;
+  margin: 0 3px 0 0;
 }
 
 nav .location-box button .left svg {
   padding-top: 8px;
   height: 100%;
   color: white;
-  width: 20px;
+  width: 18px;
   color: white;
 }
 
@@ -150,7 +150,7 @@ nav .searchbox .categories select {
   color: #414141;
   height: 37px;
   font-size: 14px;
-  width: auto;
+  width: 56px;
   cursor: pointer;
   text-align: center;
   padding: 0 6px;
@@ -167,7 +167,7 @@ nav .searchbox input {
   font-size: 15px;
   background-color: white;
   padding: 0 10px;
-  width: 30vw;
+  width: 50vw;
 }
 
 nav .searchbox .search-btn {
@@ -180,6 +180,7 @@ nav .searchbox .search-btn {
   cursor: pointer;
   text-align: center;
   padding: 0 10px;
+  width: 51px;
 }
 
 nav .searchbox .search-btn:active {
