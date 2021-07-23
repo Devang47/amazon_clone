@@ -23,7 +23,7 @@ nav {
   left: 0;
   width: 100%;
   min-width: 1250px;
-  .upperNav{
+  .upperNav {
     padding: 6px;
     display: flex;
     flex-wrap: nowrap;
@@ -373,12 +373,12 @@ nav {
           border-radius: 2px;
           font-size: 16px;
           height: 31px;
-box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.014),
+          box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.014),
             0 0.1px 0.3px rgba(0, 0, 0, 0.02),
             0 0.3px 0.6px rgba(0, 0, 0, 0.025),
             0 0.4px 1.1px rgba(0, 0, 0, 0.03),
-            0 0.8px 2.1px rgba(0, 0, 0, 0.036), 
-            0 2px 5px rgba(0, 0, 0, 0.05);          outline: none;
+            0 0.8px 2.1px rgba(0, 0, 0, 0.036), 0 2px 5px rgba(0, 0, 0, 0.05);
+          outline: none;
           width: 210px;
           &:active,
           &:focus {
@@ -400,8 +400,7 @@ box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.014),
             0 0.1px 0.3px rgba(0, 0, 0, 0.02),
             0 0.3px 0.6px rgba(0, 0, 0, 0.025),
             0 0.4px 1.1px rgba(0, 0, 0, 0.03),
-            0 0.8px 2.1px rgba(0, 0, 0, 0.036), 
-            0 2px 5px rgba(0, 0, 0, 0.05);
+            0 0.8px 2.1px rgba(0, 0, 0, 0.036), 0 2px 5px rgba(0, 0, 0, 0.05);
           &:hover {
             background-color: rgb(241, 241, 241);
           }
@@ -415,6 +414,28 @@ box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.014),
               inset 0 2px 5px rgba(0, 0, 0, 0.05);
           }
         }
+      }
+    }
+  }
+}
+
+.categories_nav {
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  gap: 1px;
+  padding: 10px;
+  li {
+    list-style-type: none;
+    a {
+      padding: 4px 12px;
+      border-radius: 2px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid white;
       }
     }
   }

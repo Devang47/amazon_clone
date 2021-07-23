@@ -525,4 +525,33 @@ nav .cart .cart_text {
   -webkit-box-shadow: inset 0 0.1px 0.1px rgba(0, 0, 0, 0.014), inset 0 0.1px 0.3px rgba(0, 0, 0, 0.02), inset 0 0.3px 0.6px rgba(0, 0, 0, 0.025), inset 0 0.4px 1.1px rgba(0, 0, 0, 0.03), inset 0 0.8px 2.1px rgba(0, 0, 0, 0.036), inset 0 2px 5px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 0.1px 0.1px rgba(0, 0, 0, 0.014), inset 0 0.1px 0.3px rgba(0, 0, 0, 0.02), inset 0 0.3px 0.6px rgba(0, 0, 0, 0.025), inset 0 0.4px 1.1px rgba(0, 0, 0, 0.03), inset 0 0.8px 2.1px rgba(0, 0, 0, 0.036), inset 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+
+.categories_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #232f3e;
+  gap: 1px;
+  padding: 10px;
+}
+
+.categories_nav li {
+  list-style-type: none;
+}
+
+.categories_nav li a {
+  padding: 4px 12px;
+  border-radius: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.categories_nav li a:hover {
+  border: 1px solid white;
+}
 /*# sourceMappingURL=style.css.map */
