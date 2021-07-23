@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #eaeded;
   font-family: "Roboto", sans-serif;
 }
 
@@ -577,8 +577,8 @@ nav .cart .cart_text {
   top: 50%;
   height: 50%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0000), to(#fff));
-  background: linear-gradient(#0000, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000), to(#eaeded));
+  background: linear-gradient(#0000, #eaeded);
 }
 
 .product_banner a {

@@ -91,6 +91,8 @@ function Products() {
           </div>
           <div className="item" id="item7">
           </div>
+          <div className="item" id="item8">
+          </div>
         </div>
       </section>
     </>
