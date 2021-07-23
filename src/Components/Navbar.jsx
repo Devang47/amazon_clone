@@ -42,7 +42,7 @@ function Navbar() {
                 </select>
               </label>
               <input type="text" />
-              <button className="search-btn" typeof='Submit' >
+              <button className="search-btn" type='submit' >
                 <span
                   class="iconify"
                   data-icon="mdi:magnify"
