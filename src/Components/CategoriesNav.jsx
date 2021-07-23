@@ -5,7 +5,7 @@ function CategoriesNav() {
     <>
       <ul className="categories_nav">
         <li>
-          <a href="#">All</a>
+          <a href="#" className='bold'>All</a>
         </li>
         <li>
           <a href="#">Amazon Pay</a>

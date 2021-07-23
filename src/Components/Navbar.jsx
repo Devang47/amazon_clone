@@ -62,7 +62,7 @@ function Navbar(props) {
               ></span>
             </div>
           </div>
-          <div className="sign_in">
+          <div className="sign_in_section">
             <button>
               <span className="hello">
                 Hello, {signIn ? "devang" : "Sign in"}

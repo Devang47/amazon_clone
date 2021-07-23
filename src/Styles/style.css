@@ -246,7 +246,7 @@ nav .country_select .India svg {
   height: auto;
 }
 
-nav .sign_in button {
+nav .sign_in_section button {
   cursor: pointer;
   border: none;
   padding: 10px;
@@ -270,17 +270,17 @@ nav .sign_in button {
   border: 1px solid transparent;
 }
 
-nav .sign_in button:hover {
+nav .sign_in_section button:hover {
   border: 1px solid white;
 }
 
-nav .sign_in button .hello {
+nav .sign_in_section button .hello {
   font-size: 12px;
   white-space: nowrap;
   color: #e0e0e0;
 }
 
-nav .sign_in button .list {
+nav .sign_in_section button .list {
   font-size: 14px;
   white-space: nowrap;
   color: white;
@@ -364,7 +364,7 @@ nav .cart .cart_text {
   font-size: 13px;
 }
 
-.sign_in {
+.sign_in_btn {
   background-color: #ffd814;
   padding: 8px 5px;
   display: block;
@@ -376,13 +376,14 @@ nav .cart .cart_text {
   margin: 10px 0;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
+  cursor: pointer;
 }
 
-.sign_in:hover {
+.sign_in_btn:hover {
   background-color: #f6d115;
 }
 
-.sign_in:active {
+.sign_in_btn:active {
   background-color: #ceac06;
 }
 
@@ -564,7 +565,7 @@ nav .cart .cart_text {
   min-width: 1250px;
   margin: 0 auto;
   background-color: #f79b34;
-  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/prime/Events/Pug/GW/Event_hero_Teaser_PC_1500X600_eng._CB664069228_.jpg");
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/prime/Events/Pug/Leadup21-page/Eng-Mobile/XCM_Manual_1348517_in_prime_1_pd_1500x600_b84db980-7588-4c7f-b61c-dcb74fd3836c._CB663287815_.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -593,10 +594,10 @@ nav .cart .cart_text {
   display: -ms-grid;
   display: grid;
   min-width: 1250px;
-  max-width: 1470px;
+  max-width: 1450px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 23px;
   margin: 0 auto;
 }
 
@@ -614,7 +615,7 @@ nav .cart .cart_text {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 300px;
+  height: 280px;
   gap: 13px;
 }
 
@@ -640,5 +641,9 @@ nav .cart .cart_text {
   display: block;
   font-size: 13px;
   margin-top: 2px;
+}
+
+.products .cards .item .sign_in_title {
+  font-size: 23px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -50,7 +50,7 @@ function LocationBox(props) {
               Select a delivery location to see product availability and
               delivery options
             </p>
-            <button className="sign_in">Sign in to see your addresses</button>
+            <button className="sign_in_btn">Sign in to see your addresses</button>
             <span className="or_enter_pincode">or enter an Indian pincode</span>
             <form className="pincode_input" onSubmit={(e) => getLocation(e)}>
               <input

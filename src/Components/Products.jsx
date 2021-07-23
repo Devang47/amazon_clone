@@ -79,8 +79,8 @@ function Products() {
             </div>
           </div>
           <div className="item" id="item4">
-            <h2>Sign in for your best experience</h2>
-            <button className='sign_in'>Sign in securely</button>
+            <h2 className='sign_in_title' >Sign in for your best experience</h2>
+            <button className='sign_in_btn'>Sign in securely</button>
           </div>
         </div>
       </section>
