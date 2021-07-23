@@ -5,11 +5,11 @@ import "./Styles/style.css";
 
 function App() {
   const [locationBox, setLocationBox] = useState(false);
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState("Select your address");
   return (
     <>
       <Navbar location={location} setLBox={setLocationBox} />
-      {locationBox ? <LocationBox setLBox={setLocationBox} /> : ""}
+      {locationBox && <LocationBox setLBox={setLocationBox} setLocation={setLocation} /> }
      
     </>
   );

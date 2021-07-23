@@ -18,18 +18,20 @@ body {
 }
 
 nav {
-  background-color: $navbar-bg;
-  color: white;
   position: sticky;
   top: 0;
   left: 0;
-  padding: 6px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
   width: 100%;
   min-width: 1250px;
-  gap: 3px;
+  .upperNav{
+    padding: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $navbar-bg;
+    color: white;
+    align-items: center;
+    gap: 3px;
+  }
   .logo {
     padding: 10px 10px 3px 7px;
     margin-left: 3px;
