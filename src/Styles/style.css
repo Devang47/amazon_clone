@@ -376,25 +376,31 @@ nav .cart .cart_text {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
+  z-index: 1;
 }
 
 .set_location_section .shadow {
+  display: block;
   border: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.575);
   border: none;
-  pointer-events: none;
+  z-index: 2;
 }
 
 .set_location_section .box {
   background-color: white;
   border: 1px solid #0002;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
   border-radius: 8px;
   width: 355px;
 }
