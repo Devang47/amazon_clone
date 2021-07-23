@@ -23,7 +23,7 @@ nav {
   left: 0;
   width: 100%;
   min-width: 1250px;
-  z-index: 100;
+  z-index: 1;
   .upperNav {
     padding: 6px;
     display: flex;
@@ -304,7 +304,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
   .shadow {
     display: block;
     border: none;
@@ -315,7 +315,7 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.575);
     border: none;
-    z-index: 2;
+    z-index: 3;
   }
   .box {
     background-color: white;
@@ -324,7 +324,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 4;
     border-radius: 8px;
     width: 355px;
     .top_bar {
@@ -457,13 +457,18 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
+  // z-index: -1;
   .gradient {
     position: absolute;
     top: 50%;
     height: 50%;
     width: 100%;
     background: linear-gradient(#0000, #fff);
+  }
+  a{
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }
 .products {
@@ -472,6 +477,7 @@ nav {
   margin: 0 auto;
   min-height: 1000px;
   margin-top: -350px;
+  position: relative;
   .cards {
     display: grid;
     min-width: 1250px;
@@ -486,7 +492,7 @@ nav {
       margin: 0 auto;
       padding: 20px;
 
-      .inr_crd {
+      .inner_card {
         margin-top: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -516,6 +522,19 @@ nav {
       .sign_in_title {
         font-size: 23px;
       }
+      .sign_in_btn{
+        margin-top: 20px;
+      }
+      .banner_img{
+        height: 300px;
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        background-color: coral;
+      }
+    }
+    #item4{
+      height: 160px;
     }
   }
 }

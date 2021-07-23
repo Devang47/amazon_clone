@@ -4,13 +4,16 @@ function Products() {
   return (
     <>
       <section className="product_banner">
+          <a href="#">
+
         <div className="gradient"></div>
+          </a>
       </section>
       <section className="products">
         <div className="cards">
           <div className="item" id="item1">
             <h2>Upgrade your home | Amazon Brands & more</h2>
-            <div className="inr_crd">
+            <div className="inner_card">
               <div className="inr_itm inr_itm1">
                 <a href="#">
                   <span className="img"></span>
@@ -42,7 +45,7 @@ function Products() {
           </div>
           <div className="item" id="item2">
             <h2>Upgrade your home | Amazon Brands & more</h2>
-            <div className="inr_crd">
+            <div className="inner_card">
               <div className="inr_itm inr_itm1">
                 <a href="#">
                   <span className="img"></span>
@@ -74,13 +77,19 @@ function Products() {
           </div>
           <div className="item" id="item3">
             <h2>Exclusively for Prime members</h2>
-            <div className="display-img">
-              <img src="#" alt="Display Image" />
+            <div className="banner_img-wrapper">
+              <span className='banner_img' src="#" alt="Display Image"> </span>
             </div>
           </div>
           <div className="item" id="item4">
             <h2 className='sign_in_title' >Sign in for your best experience</h2>
             <button className='sign_in_btn'>Sign in securely</button>
+          </div>
+          <div className="item" id="item5">
+          </div>
+          <div className="item" id="item6">
+          </div>
+          <div className="item" id="item7">
           </div>
         </div>
       </section>
