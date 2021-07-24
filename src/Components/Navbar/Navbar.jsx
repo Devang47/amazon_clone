@@ -10,7 +10,7 @@ function Navbar(props) {
       <nav>
         <div className="upperNav">
           <div className="logo">
-            <a href="#">
+            <a href="/">
               <img src={logo} alt="" />
             </a>
           </div>
@@ -63,28 +63,33 @@ function Navbar(props) {
             </div>
           </div>
           <div className="sign_in_section">
+            <a href="/signin">
             <button>
+              
               <span className="hello">
                 Hello, {signIn ? 'devang' : 'Sign in'}
               </span>
               <span className="list bold">Account & Lists</span>
             </button>
+            </a>
           </div>
           <div className="return_orders">
             <span className="returns">Returns</span>
             <span className="orders bold ">& Orders</span>
           </div>
           <div className="cart">
-            <svg width="1em" height="1em" viewBox="0 0 24 24">
-              <path
-                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"
-                fill="#626262"
-              />
-              <circle cx="10.5" cy="19.5" r="1.5" fill="#626262" />
-              <circle cx="17.5" cy="19.5" r="1.5" fill="#626262" />
-            </svg>
-            <div className="cartItems">0</div>
-            <div className="cart_text bold">Cart</div>
+            <a href="/cart">
+              <svg width="1em" height="1em" viewBox="0 0 24 24">
+                <path
+                  d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"
+                  fill="#626262"
+                />
+                <circle cx="10.5" cy="19.5" r="1.5" fill="#626262" />
+                <circle cx="17.5" cy="19.5" r="1.5" fill="#626262" />
+              </svg>
+              <div className="cartItems">0</div>
+              <div className="cart_text bold">Cart</div>
+            </a>
           </div>
         </div>
         <CategoriesNav />

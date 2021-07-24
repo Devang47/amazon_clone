@@ -167,6 +167,12 @@ nav {
 		}
 	}
 	.sign_in_section {
+			a{
+			text-decoration: none;
+			color: rgb(224, 224, 224);
+			height: 100%;
+			width: 100%;
+		}
 		button {
 			cursor: pointer;
 			border: none;
@@ -226,6 +232,12 @@ nav {
 		border: 1px solid transparent;
 		position: relative;
 		width: 137px;
+		a{
+			text-decoration: none;
+			color: white;
+			height: 100%;
+			width: 100%;
+		}
 		&:hover {
 			border: 1px solid white;
 		}

@@ -242,6 +242,13 @@ nav .country_select .India svg {
   height: auto;
 }
 
+nav .sign_in_section a {
+  text-decoration: none;
+  color: #e0e0e0;
+  height: 100%;
+  width: 100%;
+}
+
 nav .sign_in_section button {
   cursor: pointer;
   border: none;
@@ -326,6 +333,13 @@ nav .cart {
   border: 1px solid transparent;
   position: relative;
   width: 137px;
+}
+
+nav .cart a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
 }
 
 nav .cart:hover {
