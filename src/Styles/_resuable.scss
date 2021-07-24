@@ -1,25 +1,23 @@
-$navbar-bg: #131921;
-
 .sign_in_btn {
-  background-color: #ffd814;
-  padding: 8px 5px;
-  display: block;
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  text-align: center;
-  font-size: 13px;
-  margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
-  cursor: pointer;
-  &:hover {
-    background-color: #f6d115;
-  }
-  &:active {
-    background-color: #ceac06;
-  }
+	background-color: #ffd814;
+	padding: 8px 5px;
+	display: block;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	margin: 10px 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
+	cursor: pointer;
+	&:hover {
+		background-color: #f6d115;
+	}
+	&:active {
+		background-color: #ceac06;
+	}
 }
 
 .bold {
-  font-weight: 600;
+	font-weight: 600;
 }
