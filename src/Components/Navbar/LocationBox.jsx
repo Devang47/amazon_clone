@@ -6,8 +6,13 @@ import "react-toastify/dist/ReactToastify.css";
 function LocationBox(props) {
   const [pincode, setPincode] = useState("");
 
+
+
+
   const getLocation = (e) => {
     e.preventDefault();
+
+    // To get details about pincode (Indian pincodes only till now)
     if (!isNaN(pincode) && pincode.length >= 6) {
       var options = {
         method: "GET",

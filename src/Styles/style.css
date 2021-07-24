@@ -1,13 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.sign_in_btn {
+  background-color: #ffd814;
+  padding: 8px 5px;
+  display: block;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
+  cursor: pointer;
+}
+
+.sign_in_btn:hover {
+  background-color: #f6d115;
+}
+
+.sign_in_btn:active {
+  background-color: #ceac06;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.bold {
-  font-weight: 600;
 }
 
 body {
@@ -364,29 +387,6 @@ nav .cart .cart_text {
   font-size: 13px;
 }
 
-.sign_in_btn {
-  background-color: #ffd814;
-  padding: 8px 5px;
-  display: block;
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  text-align: center;
-  font-size: 13px;
-  margin: 10px 0;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.061);
-  cursor: pointer;
-}
-
-.sign_in_btn:hover {
-  background-color: #f6d115;
-}
-
-.sign_in_btn:active {
-  background-color: #ceac06;
-}
-
 .set_location_section {
   position: fixed;
   top: 0;
@@ -414,7 +414,7 @@ nav .cart .cart_text {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.575);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
   z-index: 3;
 }
@@ -592,6 +592,7 @@ nav .cart .cart_text {
   width: 100%;
   margin: 0 auto;
   min-height: 1000px;
+  padding-bottom: 500px;
   margin-top: -350px;
   position: relative;
 }
@@ -599,8 +600,7 @@ nav .cart .cart_text {
 .products .cards {
   display: -ms-grid;
   display: grid;
-  min-width: 1250px;
-  max-width: 1450px;
+  width: 1450px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 23px;
@@ -609,10 +609,15 @@ nav .cart .cart_text {
 
 .products .cards .item {
   background-color: white;
-  height: 400px;
+  height: 410px;
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
+}
+
+.products .cards .item h2 {
+  color: #0F1111;
 }
 
 .products .cards .item .inner_card {
@@ -665,7 +670,34 @@ nav .cart .cart_text {
   background-color: coral;
 }
 
+.products .cards .item .read_more {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.products .cards .item .read_more a {
+  color: #007185;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.products .cards .item .read_more a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
 .products .cards #item4 {
   height: 160px;
+}
+
+.products .cards #item5 .inner_card, .products .cards #item7 .inner_card, .products .cards #item8 .inner_card {
+  height: 311px;
+}
+
+.products .cards #item9 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
 }
 /*# sourceMappingURL=style.css.map */

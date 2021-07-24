@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Images/main-logo.png";
+import logo from "../../Images/main-logo.png";
 import CategoriesNav from "./CategoriesNav";
 
 function Navbar(props) {

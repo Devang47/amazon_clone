@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "./Components/Navbar";
-import LocationBox from "./Components/LocationBox";
+import Navbar from "./Components/Navbar/Navbar";
+import LocationBox from "./Components/Navbar/LocationBox";
 import "./Styles/style.css";
-import Products from "./Components/Products";
+import Homepage_Products from "./Components/Homepage/Homepage-products";
 
 function App() {
   const [locationBox, setLocationBox] = useState(false);
@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <Navbar location={location} setLBox={setLocationBox} />
-      {locationBox && <LocationBox setLBox={setLocationBox} setLocation={setLocation} /> }
-      <Products />
+      {locationBox && (
+        <LocationBox setLBox={setLocationBox} setLocation={setLocation} />
+      )}
+      <Homepage_Products />
     </>
   );
 }
