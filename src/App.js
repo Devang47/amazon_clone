@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
 import LocationBox from './Components/Navbar/LocationBox';
@@ -9,11 +9,10 @@ import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
 
 function App() {
-  const location = useLocation();
   const [locationBox, setLocationBox] = useState(false);
   const [user_location, setUserLocation] = useState('Select your address');
   return (
-    <>
+    <Router>
       <Switch>
         <Route exact path="/">
           <Navbar location={user_location} setLBox={setLocationBox} />
@@ -49,7 +48,7 @@ function App() {
           <MyCart />
         </Route>
       </Switch>
-    </>
+    </Router>
   );
 }
 

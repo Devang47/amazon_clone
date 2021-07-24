@@ -52,18 +52,18 @@ nav .logo:hover {
   border-radius: 2px;
 }
 
-nav .logo a {
+nav .logo span {
   display: block;
   height: 100%;
   width: 109px;
   position: relative;
 }
 
-nav .logo a img {
+nav .logo span img {
   height: 29px;
 }
 
-nav .logo a::after {
+nav .logo span::after {
   position: absolute;
   left: 89%;
   top: 15%;
