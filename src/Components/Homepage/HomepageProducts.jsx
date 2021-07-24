@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Products() {
   return (
@@ -233,7 +234,141 @@ function Products() {
               <a href="#">See more</a>
             </div>
           </div>
-          <div className="item" id="item9"></div>
+          <div className="item" id="item9">
+            <h2>Today’s Top Deals</h2>
+            <div className="homepage_item_slider">
+              {[1, 2, 3, 4, 5].map(e => {
+                return (
+                  <>
+                    <Link to="#">
+                      <div className="slider_item">
+                        <div className="item_thumbnail">
+                          <img
+                            src="https://images-na.ssl-images-amazon.com/images/I/91qtcZ6c2yL._SX679_.jpg"
+                            alt="Item thumbnail"
+                          />
+                        </div>
+                        <div className="item_details">
+                          <span className="price_range">
+                            <span className="currency_sign">$</span>179.00 -
+                            <span className="currency_sign">$</span>20,99.00
+                          </span>
+                          <br />
+                          <span className="timer">Ends in 02:14:34</span>
+                        </div>
+                      </div>
+                    </Link>
+                    <Link to="#">
+                      <div className="slider_item">
+                        <div className="item_thumbnail">
+                          <img
+                            src="https://images-eu.ssl-images-amazon.com/images/I/41znff7SgPL._SX300_SY300_QL70_FMwebp_.jpg"
+                            alt="Item thumbnail"
+                          />
+                        </div>
+                        <div className="item_details">
+                          <span className="price">
+                            <span className="currency_sign">$</span>20,99.00
+                          </span>
+                          <br />
+
+                          <span className="timer">Ends in 02:14:34</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+          <div className="item" id="item10">
+            <h2>Effective dishwashing for Indian cooking</h2>
+            <div className="banner_img-wrapper">
+              <span className="banner_img" src="#" alt="Display Image"></span>
+            </div>
+            <div className="read_more">
+              <a href="#">See more</a>
+            </div>
+          </div>
+          <div className="item" id="item11">
+            <h2>Up to 45% off | Bedding & linen | Amazon Brands & more</h2>
+            <div className="banner_img-wrapper">
+              <span className="banner_img" src="#" alt="Display Image"></span>
+            </div>
+            <div className="read_more">
+              <a href="#">See more</a>
+            </div>
+          </div>
+          <div className="item" id="item12">
+            <h2>Flat 50% back on Fruits & vegetables | Amazon Fresh</h2>
+            <div className="inner_card">
+              <div className="inr_itm inr_itm1">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm2">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm3">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm4">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+            </div>
+            <div className="read_more">
+              <a href="#">See more</a>
+            </div>
+          </div>
+          <div className="item" id="item12">
+            <h2>At home Grooming & Wellness devices</h2>
+            <div className="inner_card">
+              <div className="inr_itm inr_itm1">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm2">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm3">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+
+              <div className="inr_itm inr_itm4">
+                <a href="#">
+                  <span className="img"></span>
+                  <span className="caption">Smart LED TVs</span>
+                </a>
+              </div>
+            </div>
+            <div className="read_more">
+              <a href="#">See more</a>
+            </div>
+          </div>
         </div>
       </section>
     </>

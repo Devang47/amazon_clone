@@ -83,7 +83,7 @@
         margin-top: 20px;
       }
       .banner_img {
-        height: 300px;
+        height: 280px;
         width: 100%;
         margin-top: 10px;
         display: block;
@@ -114,6 +114,48 @@
     }
     #item9 {
       grid-column: 1/5;
+      .homepage_item_slider{
+        margin-top: 10px;
+        height: 90%;
+        overflow-x: scroll;
+        display: flex;
+        gap: 23px;
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        .slider_item{
+          .item_thumbnail{
+            height: 200px;
+            background-color: white;
+            padding: 20px;
+            img{
+              height: 115%;
+              object-fit:contain;
+            }
+          }
+          .item_details{
+            padding-left: 10px;
+            margin-top: 8px;
+            .price_range{
+              font-size: 14px;
+              .currency_sign{
+                font-size: 16px;
+              }
+            }
+            .price{
+              font-size: 18px;
+              .currency_sign{
+                font-size: 20px;
+              }
+            }
+            .timer{
+              font-size: 13px;
+              color: #757575;
+            }
+          }
+        }
+      }
     }
   }
 }
