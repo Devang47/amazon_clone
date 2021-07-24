@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useLocation } from "react-router-dom";
+
 import Navbar from "./Components/Navbar/Navbar";
 import LocationBox from "./Components/Navbar/LocationBox";
 import "./Styles/style.css";
 import Homepage_Products from "./Components/Homepage/Homepage-products";
 
 function App() {
+  const routes = ["/register", "/signin"];
+  const location = useLocation();
   const [locationBox, setLocationBox] = useState(false);
-  const [location, setLocation] = useState("Select your address");
+  const [user_location, setUserLocation] = useState("Select your address");
   return (
     <>
-      <Navbar location={location} setLBox={setLocationBox} />
+      {!routes.includes(location.pathname) && (
+        <Navbar location={user_location} setLBox={setLocationBox} />
+      )}
       {locationBox && (
-        <LocationBox setLBox={setLocationBox} setLocation={setLocation} />
+        <LocationBox setLBox={setLocationBox} setLocation={setUserLocation} />
       )}
       <Homepage_Products />
     </>
