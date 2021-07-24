@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
 import LocationBox from './Components/Navbar/LocationBox';
-import './Styles/style.css';
+import './Styles/style.scss';
 import HomepageProducts from './Components/Homepage/HomepageProducts';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
