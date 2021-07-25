@@ -2,7 +2,7 @@
   box-sizing: border-box;
   &__containerGrid {
     display: grid;
-    grid-template-columns: 75% auto;
+    grid-template-columns: auto 300px;
     grid-gap: 1rem;
     margin-top: 2rem;
     padding: 0 1rem;
@@ -36,6 +36,7 @@
       }
 
       .sign_up_btn {
+        padding: 8px 20px;
         background-color: #fff;
         border: 1px solid lightgray;
         &:hover {
@@ -179,7 +180,6 @@
     }
   }
 }
-
-.cart__itemName{
-  width: 576px;
+.cart__leftCol .cart__card .sign_in_btn{
+  padding: 8px 20px;
 }
