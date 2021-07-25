@@ -38,21 +38,21 @@ function CartItem({ item: c, removeItem, changeItemQty }) {
             ))}
           </select>
           |
-          <a
+          <Link
             className="actionLink"
-            href={void 0}
+              to='#'
             onClick={() => removeItem(c.id)}
           >
             Delete
-          </a>
+          </Link>
           |
-          <a className="actionLink" href={void 0}>
+          <Link className="actionLink" to="#">
             Save for later
-          </a>
+          </Link>
           |
-          <a className="actionLink" href={void 0}>
+          <Link className="actionLink" to="#">
             See more like this
-          </a>
+          </Link>
         </div>
       </div>
       <div className="cart__price">

@@ -8,35 +8,35 @@ function HomepageCards(Props) {
         <h2>Upgrade your home | Amazon Brands & more</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
 
@@ -44,35 +44,35 @@ function HomepageCards(Props) {
         <h2>Top rated, premium quality | Amazon Brands & more</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item3">
@@ -81,7 +81,7 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item4">
@@ -92,140 +92,140 @@ function HomepageCards(Props) {
         <h2>Styles for Men | Up to 70% off</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item6">
         <h2>Automotive essentials | Up to 60% off</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item7">
         <h2>Shop by Category</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item8">
         <h2>Top picks for your home ACs</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item9">
@@ -281,7 +281,7 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item11">
@@ -290,77 +290,77 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item12">
         <h2>Flat 50% back on Fruits & vegetables | Amazon Fresh</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
       <div className="item" id="item12">
         <h2>At home Grooming & Wellness devices</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <a href="#">
+            <Link to='#' >
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="read_more">
-          <a href="#">See more</a>
+          <Link to='#' >See more</Link>
         </div>
       </div>
 
@@ -372,22 +372,22 @@ function HomepageCards(Props) {
           {[1, 2, 3, 4, 5].map(e => {
             return (
               <>
-                <a href="#">
+                <Link to="#">
                   <div className="slider_item">
                     <img
                       src="https://images-eu.ssl-images-amazon.com/images/I/41znff7SgPL._SX300_SY300_QL70_FMwebp_.jpg"
-                      alt="Image"
+                      alt="Product"
                     />
                   </div>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <div className="slider_item">
                     <img
                       src="https://images-na.ssl-images-amazon.com/images/I/91qtcZ6c2yL._SX679_.jpg"
-                      alt="Image"
+                      alt="Product"
                     />
                   </div>
-                </a>
+                </Link>
               </>
             );
           })}
@@ -400,22 +400,22 @@ function HomepageCards(Props) {
           {[1, 2, 3, 4, 5].map(e => {
             return (
               <>
-                <a href="#">
+                <Link to="#">
                   <div className="slider_item">
                     <img
                       src="https://images-eu.ssl-images-amazon.com/images/I/51ceWNX9JzL._SX300_SY300_QL70_FMwebp_.jpg"
-                      alt="Image"
+                      alt="Product"
                     />
                   </div>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <div className="slider_item">
                     <img
                       src="https://images-eu.ssl-images-amazon.com/images/I/41zcknWdCWL._SX300_SY300_QL70_FMwebp_.jpg"
-                      alt="Image"
+                      alt="Product"
                     />
                   </div>
-                </a>
+                </Link>
               </>
             );
           })}

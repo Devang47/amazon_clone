@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import HomepageCards from './HomepageCards';
 
@@ -7,7 +6,7 @@ function Homepage() {
   return (
     <>
       <section className="product_banner" id="header">
-        <a href="#">
+        <a href="/">
           <div className="gradient"></div>
         </a>
       </section>

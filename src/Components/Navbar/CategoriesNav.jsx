@@ -1,46 +1,47 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CategoriesNav() {
   return (
     <>
       <ul className="categories_nav">
         <li>
-          <a href="#" className="bold">
+          <Link to='#'className="bold">
             All
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">Amazon Pay</a>
+          <Link to='#'>Amazon Pay</Link>
         </li>
         <li>
-          <a href="#">Mobiles</a>
+          <Link to='#'>Mobiles</Link>
         </li>
         <li>
-          <a href="#">Fashion</a>
+          <Link to='#'>Fashion</Link>
         </li>
         <li>
-          <a href="#">Electronics</a>
+          <Link to='#'>Electronics</Link>
         </li>
         <li>
-          <a href="#">New Releases</a>
+          <Link to='#'>New Releases</Link>
         </li>
         <li>
-          <a href="#">Prime</a>
+          <Link to='#'>Prime</Link>
         </li>
         <li>
-          <a href="#">Computers</a>
+          <Link to='#'>Computers</Link>
         </li>
         <li>
-          <a href="#">Pet Supplies</a>
+          <Link to='#'>Pet Supplies</Link>
         </li>
         <li>
-          <a href="#">Health, Household & Personal Care</a>
+          <Link to='#'>Health, Household & Personal Care</Link>
         </li>
         <li>
-          <a href="#">Gift Ideas</a>
+          <Link to='#'>Gift Ideas</Link>
         </li>
         <li>
-          <a href="#">Customer Service</a>
+          <Link to='#'>Customer Service</Link>
         </li>
       </ul>
     </>
