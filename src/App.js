@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import LocationBox from './Components/Navbar/LocationBox';
 import './Styles/style.scss';
-import HomepageProducts from './Components/Homepage/HomepageProducts';
+import Homepage from './Components/Homepage/Homepage';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
+import Footer from './Components/Homepage/Footer'
 
 function App() {
   const [locationBox, setLocationBox] = useState(false);
@@ -22,10 +23,10 @@ function App() {
               setLocation={setUserLocation}
             />
           )}
-          <HomepageProducts />
+          <Homepage />
         </Route>
         <Route exact path="/register">
-          <HomepageProducts />
+          <Homepage />
           <Navbar location={user_location} setLBox={setLocationBox} />
           {locationBox && (
             <LocationBox
@@ -46,6 +47,18 @@ function App() {
             />
           )}
           <MyCart />
+          <Footer />
+        </Route>
+        <Route exact path="/products">
+          <Navbar location={user_location} setLBox={setLocationBox} />
+          {locationBox && (
+            <LocationBox
+              setLBox={setLocationBox}
+              setLocation={setUserLocation}
+            />
+          )}
+          {/* Larry your product Component goes here */}
+          <Footer />
         </Route>
       </Switch>
     </Router>

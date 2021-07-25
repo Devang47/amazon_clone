@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import HomepageCards from './HomepageCards';
 
-function Products() {
+function Homepage() {
   return (
     <>
       <section className="product_banner" id="header">
@@ -16,7 +16,7 @@ function Products() {
           <HomepageCards />
         </div>
       </section>
-      <section className='footer_banner'>
+      <section className="footer_banner">
         <img
           src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg"
           alt=""
@@ -27,4 +27,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Homepage;
