@@ -194,7 +194,7 @@ function HomepageCards(Props) {
         </div>
       </div>
       <div className="item" id="item8">
-        <h2 className="lightH2">Top picks for your home ACs</h2>
+        <h2>Top picks for your home ACs</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <a href="#">
