@@ -15,46 +15,25 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Navbar />
-          {locationBox && (
-            <LocationBox
-              setLBox={setLocationBox}
-              setLocation={setUserLocation}
-            />
-          )}
+
           <Homepage />
         </Route>
         <Route exact path="/register">
           <Homepage />
           <Navbar />
-          {locationBox && (
-            <LocationBox
-              setLBox={setLocationBox}
-              setLocation={setUserLocation}
-            />
-          )}
         </Route>
         <Route exact path="/signin">
           <SignIn />
         </Route>
         <Route exact path="/cart">
           <Navbar />
-          {locationBox && (
-            <LocationBox
-              setLBox={setLocationBox}
-              setLocation={setUserLocation}
-            />
-          )}
+
           <MyCart />
           <Footer />
         </Route>
         <Route exact path="/products">
           <Navbar />
-          {locationBox && (
-            <LocationBox
-              setLBox={setLocationBox}
-              setLocation={setUserLocation}
-            />
-          )}
+
           {/* Larry your product Component goes here */}
           <Footer />
         </Route>
