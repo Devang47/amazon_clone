@@ -5,7 +5,7 @@ import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
 import LocationBox from './LocationBox';
 
-function Navbar(props) {
+function Navbar() {
   const [signIn, setSignIn] = useState(false);
   const [userName, setUserName] = useState('');
   const [locationBox, setLocationBox] = useState(false);
@@ -37,7 +37,7 @@ function Navbar(props) {
             </div>
           </Link>
           <div className="location-box">
-            <button onClick={() => props.setLocationBox(true)}>
+            <button onClick={() => setLocationBox(true)}>
               <div className="left">
                 <span
                   className="iconify"
@@ -47,7 +47,7 @@ function Navbar(props) {
               </div>
               <div className="right">
                 <span className="deliverto">
-                  {props.location === 'Select your address'
+                  {user_location === 'Select your address'
                     ? 'Hello'
                     : 'Deliver to'}
                 </span>
