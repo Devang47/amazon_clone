@@ -21,7 +21,6 @@ function Homepage() {
           alt=""
         />
       </section>
-      <Footer />
     </>
   );
 }

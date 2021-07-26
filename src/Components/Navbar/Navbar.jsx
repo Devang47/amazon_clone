@@ -10,9 +10,11 @@ function Navbar(props) {
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      let data = JSON.parse(localStorage.getItem('user')).user.fullName.trim().split(' ')
+      let data = JSON.parse(localStorage.getItem('user'))
+        .user.fullName.trim()
+        .split(' ');
       setUserName(data[0]);
-      setSignIn(true)
+      setSignIn(true);
     }
   }, []);
 
@@ -76,7 +78,7 @@ function Navbar(props) {
             </div>
           </div>
           <div className="sign_in_section">
-            <Link to="/signin">
+            <Link to={signIn ? '#' : '/signin'}>
               <button>
                 <span className="hello">
                   Hello, {signIn ? userName : 'Sign in'}
