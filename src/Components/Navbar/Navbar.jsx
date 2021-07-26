@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../Images/main-logo.png';
@@ -6,6 +6,15 @@ import CategoriesNav from './CategoriesNav';
 
 function Navbar(props) {
   const [signIn, setSignIn] = useState(false);
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    if (localStorage.getItem('user')) {
+      let data = JSON.parse(localStorage.getItem('user')).user.fullName.split(' ')
+      setUserName(data[0]);
+      setSignIn(true)
+    }
+  }, []);
 
   return (
     <>
@@ -70,7 +79,7 @@ function Navbar(props) {
             <Link to="/signin">
               <button>
                 <span className="hello">
-                  Hello, {signIn ? 'devang' : 'Sign in'}
+                  Hello, {signIn ? userName : 'Sign in'}
                 </span>
                 <span className="list bold">Account & Lists</span>
               </button>

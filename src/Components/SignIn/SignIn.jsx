@@ -36,13 +36,11 @@ function SignIn() {
     const fieldErrors = getSignInErrors({ email, fullName });
 
     setErrors(fieldErrors);
-    console.log(fieldErrors);
     if (
       Object.keys(fieldErrors).length === 0 &&
       fieldErrors.constructor === Object
     ) {
       // form is valid
-      console.log('made it here');
       localStorage.setItem(
         'user',
         JSON.stringify({ user: { email, fullName } }),

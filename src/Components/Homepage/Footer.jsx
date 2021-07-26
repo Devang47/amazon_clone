@@ -109,55 +109,55 @@ function Footer() {
           <div className="other_amazon_links">
             <ul>
               <li>
-                <Link> Australia</Link>
+                <Link to="#"> Australia</Link>
               </li>
               <li>
-                <Link> Brazil</Link>
+                <Link to="#"> Brazil</Link>
               </li>
               <li>
-                <Link> Canada</Link>
+                <Link to="#"> Canada</Link>
               </li>
               <li>
-                <Link> China</Link>
+                <Link to="#"> China</Link>
               </li>
               <li>
-                <Link> France</Link>
+                <Link to="#"> France</Link>
               </li>
               <li>
-                <Link> Germany</Link>
+                <Link to="#"> Germany</Link>
               </li>
               <li>
-                <Link> Italy</Link>
+                <Link to="#"> Italy</Link>
               </li>
               <li>
-                <Link> Japan</Link>
+                <Link to="#"> Japan</Link>
               </li>
               <li>
-                <Link> Mexico</Link>
+                <Link to="#"> Mexico</Link>
               </li>
               <li>
-                <Link> Netherlands</Link>
+                <Link to="#"> Netherlands</Link>
               </li>
               <li>
-                <Link> Poland</Link>
+                <Link to="#"> Poland</Link>
               </li>
               <li>
-                <Link> Singapore</Link>
+                <Link to="#"> Singapore</Link>
               </li>
               <li>
-                <Link> Spain</Link>
+                <Link to="#"> Spain</Link>
               </li>
               <li>
-                <Link> United Arab Emirates</Link>
+                <Link to="#"> United Arab Emirates</Link>
               </li>
               <li>
-                <Link> United Kingdom</Link>
+                <Link to="#"> United Kingdom</Link>
               </li>
               <li>
-                <Link> United States</Link>
+                <Link to="#"> United States</Link>
               </li>
               <li>
-                <Link> Japan</Link>
+                <Link to="#"> Japan</Link>
               </li>
             </ul>
           </div>
@@ -165,13 +165,13 @@ function Footer() {
         <div className="copyright">
             <ul>
                 <li>
-                    <Link>Conditions of Use & Sale</Link>
+                    <Link to="#">Conditions of Use & Sale</Link>
                 </li>
                 <li>
-                    <Link>Privacy Notice</Link>
+                    <Link to="#">Privacy Notice</Link>
                 </li>
                 <li>
-                    <Link>Interest-Based Ads</Link>
+                    <Link to="#">Interest-Based Ads</Link>
                 </li>
                 <li>
                     1996-2021, Amazon.com, Inc. or its affiliates 
