@@ -10,7 +10,7 @@ function Navbar(props) {
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      let data = JSON.parse(localStorage.getItem('user')).user.fullName.split(' ')
+      let data = JSON.parse(localStorage.getItem('user')).user.fullName.trim().split(' ')
       setUserName(data[0]);
       setSignIn(true)
     }
