@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
 import LocationBox from './Components/Navbar/LocationBox';
@@ -7,16 +7,14 @@ import './Styles/style.scss';
 import Homepage from './Components/Homepage/Homepage';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
-import Footer from './Components/Homepage/Footer'
+import Footer from './Components/Footer/Footer';
 
 function App() {
-  const [locationBox, setLocationBox] = useState(false);
-  const [user_location, setUserLocation] = useState('Select your address');
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Navbar location={user_location} setLBox={setLocationBox} />
+          <Navbar />
           {locationBox && (
             <LocationBox
               setLBox={setLocationBox}
@@ -27,7 +25,7 @@ function App() {
         </Route>
         <Route exact path="/register">
           <Homepage />
-          <Navbar location={user_location} setLBox={setLocationBox} />
+          <Navbar />
           {locationBox && (
             <LocationBox
               setLBox={setLocationBox}
@@ -39,7 +37,7 @@ function App() {
           <SignIn />
         </Route>
         <Route exact path="/cart">
-          <Navbar location={user_location} setLBox={setLocationBox} />
+          <Navbar />
           {locationBox && (
             <LocationBox
               setLBox={setLocationBox}
@@ -50,7 +48,7 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/products">
-          <Navbar location={user_location} setLBox={setLocationBox} />
+          <Navbar />
           {locationBox && (
             <LocationBox
               setLBox={setLocationBox}

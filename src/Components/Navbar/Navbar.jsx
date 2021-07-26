@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 
 import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
+import LocationBox from './LocationBox';
 
 function Navbar(props) {
   const [signIn, setSignIn] = useState(false);
   const [userName, setUserName] = useState('');
+  const [locationBox, setLocationBox] = useState(false);
+  const [user_location, setUserLocation] = useState('Select your address');
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
@@ -20,6 +23,10 @@ function Navbar(props) {
 
   return (
     <>
+      {/* Location Box Modal goes here */}
+      {locationBox && (
+        <LocationBox setLBox={setLocationBox} setLocation={setUserLocation} />
+      )}
       <nav>
         <div className="upperNav">
           <Link to="/">
@@ -30,7 +37,7 @@ function Navbar(props) {
             </div>
           </Link>
           <div className="location-box">
-            <button onClick={() => props.setLBox(true)}>
+            <button onClick={() => props.setLocationBox(true)}>
               <div className="left">
                 <span
                   className="iconify"
@@ -44,7 +51,7 @@ function Navbar(props) {
                     ? 'Hello'
                     : 'Deliver to'}
                 </span>
-                <span className="location bold">{props.location}</span>
+                <span className="location bold">{user_location}</span>
               </div>
             </button>
           </div>
