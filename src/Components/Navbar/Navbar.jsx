@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import useStore from '../../store'
 
 import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
 
 function Navbar(props) {
-  const [signIn, setSignIn] = useState(false);
-  const [userName, setUserName] = useState('');
-
-  useEffect(() => {
-    if (localStorage.getItem('user')) {
-      let data = JSON.parse(localStorage.getItem('user')).user.fullName.trim().split(' ')
-      setUserName(data[0]);
-      setSignIn(true)
-    }
-  }, []);
+  
+  // importing State from our zustand store
+  const signIn = useStore(state => state.signIn);
+  const userName = useStore(state => state.userName)
 
   return (
     <>
@@ -76,7 +71,7 @@ function Navbar(props) {
             </div>
           </div>
           <div className="sign_in_section">
-            <Link to="/signin">
+            <Link to={signIn ? '#' : '/signin'}>
               <button>
                 <span className="hello">
                   Hello, {signIn ? userName : 'Sign in'}

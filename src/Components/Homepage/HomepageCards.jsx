@@ -233,7 +233,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <>
+              <span key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <div className="item_thumbnail">
@@ -270,7 +270,7 @@ function HomepageCards(Props) {
                     </div>
                   </div>
                 </Link>
-              </>
+              </span>
             );
           })}
         </div>
@@ -371,7 +371,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <>
+              <span key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <img
@@ -388,7 +388,7 @@ function HomepageCards(Props) {
                     />
                   </div>
                 </Link>
-              </>
+              </span>
             );
           })}
         </div>
@@ -399,7 +399,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <>
+              <span key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <img
@@ -416,7 +416,7 @@ function HomepageCards(Props) {
                     />
                   </div>
                 </Link>
-              </>
+              </span>
             );
           })}
         </div>

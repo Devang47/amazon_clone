@@ -6,7 +6,6 @@ function Footer() {
   return (
     <>
       <footer>
-        {' '}
         <a href="#header">
           <div className="back_to_top">
             <span>Back to top</span>
@@ -163,20 +162,18 @@ function Footer() {
           </div>
         </div>
         <div className="copyright">
-            <ul>
-                <li>
-                    <Link to="#">Conditions of Use & Sale</Link>
-                </li>
-                <li>
-                    <Link to="#">Privacy Notice</Link>
-                </li>
-                <li>
-                    <Link to="#">Interest-Based Ads</Link>
-                </li>
-                <li>
-                    1996-2021, Amazon.com, Inc. or its affiliates 
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <Link to="#">Conditions of Use & Sale</Link>
+            </li>
+            <li>
+              <Link to="#">Privacy Notice</Link>
+            </li>
+            <li>
+              <Link to="#">Interest-Based Ads</Link>
+            </li>
+            <li>1996-2021, Amazon.com, Inc. or its affiliates</li>
+          </ul>
         </div>
       </footer>
     </>

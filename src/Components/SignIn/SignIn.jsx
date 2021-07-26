@@ -85,8 +85,8 @@ function SignIn() {
             Continue
           </button>
           <small className="signIn__bottomText">
-            By continuing, you agree to Amazon's{' '}
-            <Link to="#">Conditions of Use</Link> and{' '}
+            By continuing, you agree to Amazon's
+            <Link to="#">Conditions of Use</Link> and
             <Link to="#">Privacy Notice</Link>.
           </small>
           <Link className="signIn__bottomLink" to="#">
