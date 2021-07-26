@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import './Styles/style.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
-import LocationBox from './Components/Navbar/LocationBox';
-import './Styles/style.scss';
 import Homepage from './Components/Homepage/Homepage';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
@@ -15,7 +13,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Navbar />
-
           <Homepage />
         </Route>
         <Route exact path="/register">
@@ -27,13 +24,11 @@ function App() {
         </Route>
         <Route exact path="/cart">
           <Navbar />
-
           <MyCart />
           <Footer />
         </Route>
         <Route exact path="/products">
           <Navbar />
-
           {/* Larry your product Component goes here */}
           <Footer />
         </Route>
