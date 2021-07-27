@@ -90,7 +90,7 @@ function MyCart() {
         )}
       </div>
       <div className="cart__rightCol">
-        <div class="a-section a-spacing-base a-text-center">
+        <div className="a-section a-spacing-base a-text-center">
           <img
             alt=""
             src="https://images-eu.ssl-images-amazon.com/images/G/31/checkout/assets/TM_desktop._CB443006202_.png"
@@ -100,7 +100,7 @@ function MyCart() {
           {hasFreeDelivery && (
             <div className="free-delivery">
               <span
-                class="iconify"
+                className="iconify"
                 data-icon="mdi:check-circle"
                 data-inline="false"
                 data-height="18px"

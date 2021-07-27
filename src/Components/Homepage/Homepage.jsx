@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import HomepageCards from './HomepageCards';
 
 function Homepage() {
@@ -21,7 +20,6 @@ function Homepage() {
           alt=""
         />
       </section>
-      <Footer />
     </>
   );
 }

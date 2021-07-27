@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function LocationBox(props) {
   const [pincode, setPincode] = useState('');
-
+  
   const getLocation = e => {
     e.preventDefault();
 

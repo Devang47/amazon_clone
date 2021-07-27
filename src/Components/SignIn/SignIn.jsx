@@ -45,6 +45,7 @@ function SignIn() {
         'user',
         JSON.stringify({ user: { email, fullName } }),
       );
+
       history.push('/');
     }
   };
