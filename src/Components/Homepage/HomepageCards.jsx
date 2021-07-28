@@ -8,35 +8,35 @@ function HomepageCards(Props) {
         <h2>Upgrade your home | Amazon Brands & more</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
 
@@ -44,35 +44,35 @@ function HomepageCards(Props) {
         <h2>Top rated, premium quality | Amazon Brands & more</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item3">
@@ -81,7 +81,7 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item4">
@@ -92,140 +92,140 @@ function HomepageCards(Props) {
         <h2>Styles for Men | Up to 70% off</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item6">
         <h2>Automotive essentials | Up to 60% off</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item7">
         <h2>Shop by Category</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item8">
         <h2>Top picks for your home ACs</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item9">
@@ -233,7 +233,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <span key={e}>
+              <React.Fragment key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <div className="item_thumbnail">
@@ -270,7 +270,7 @@ function HomepageCards(Props) {
                     </div>
                   </div>
                 </Link>
-              </span>
+              </React.Fragment>
             );
           })}
         </div>
@@ -281,7 +281,7 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item11">
@@ -290,77 +290,77 @@ function HomepageCards(Props) {
           <span className="banner_img" src="#" alt="Display Image"></span>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item12">
         <h2>Flat 50% back on Fruits & vegetables | Amazon Fresh</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
       <div className="item" id="item12">
         <h2>At home Grooming & Wellness devices</h2>
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
-            <Link to='#' >
+            <Link to="#">
               <span className="img"></span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
         </div>
         <div className="read_more">
-          <Link to='#' >See more</Link>
+          <Link to="#">See more</Link>
         </div>
       </div>
 
@@ -371,7 +371,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <span key={e}>
+              <React.Fragment key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <img
@@ -388,7 +388,7 @@ function HomepageCards(Props) {
                     />
                   </div>
                 </Link>
-              </span>
+              </React.Fragment>
             );
           })}
         </div>
@@ -399,7 +399,7 @@ function HomepageCards(Props) {
         <div className="homepage_item_slider">
           {[1, 2, 3, 4, 5].map(e => {
             return (
-              <span key={e}>
+              <React.Fragment key={e}>
                 <Link to="#">
                   <div className="slider_item">
                     <img
@@ -416,7 +416,7 @@ function HomepageCards(Props) {
                     />
                   </div>
                 </Link>
-              </span>
+              </React.Fragment>
             );
           })}
         </div>

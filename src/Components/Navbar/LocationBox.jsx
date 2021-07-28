@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useStore from '../../store';
 
 function LocationBox(props) {
   const [pincode, setPincode] = useState('');
-  
+  const [error, setError] = useState('');
+  const signIn = useStore(state => state.signIn);
+
   const getLocation = e => {
     e.preventDefault();
 
@@ -26,7 +29,7 @@ function LocationBox(props) {
           props.setLBox(false);
         })
         .catch(function (error) {
-          console.error(error);
+          setError('Enter a valid pincode!');
         });
     } else {
       toast.error('Please enter a valid PinCode!', {
@@ -48,14 +51,26 @@ function LocationBox(props) {
         <div className="box">
           <div className="top_bar bold">Choose your location</div>
           <div className="inner_content">
-            <p className="select_a_delivery">
-              Select a delivery location to see product availability and
-              delivery options
-            </p>
-            <button className="sign_in_btn">
-              Sign in to see your addresses
-            </button>
-            <span className="or_enter_pincode">or enter an Indian pincode</span>
+            {!signIn ? (
+              <>
+                <p className="select_a_delivery">
+                  Select a delivery location to see product availability and
+                  delivery options
+                </p>
+                <button className="sign_in_btn">
+                  Sign in to see your addresses
+                </button>
+                <span className="or_enter_pincode">
+                  or enter an Indian pincode
+                </span>
+              </>
+            ) : (
+              <>
+                <p className="select_a_delivery">
+                  Enter a Indian pincode to continue
+                </p>
+              </>
+            )}
             <form className="pincode_input" onSubmit={e => getLocation(e)}>
               <input
                 type="text"
@@ -65,6 +80,13 @@ function LocationBox(props) {
               <button className="apply" type="submit">
                 Apply
               </button>
+
+              <div
+                className="error"
+                style={{ color: 'red', fontSize: '14px', marginTop: '5px' }}
+              >
+                {error}
+              </div>
             </form>
           </div>
         </div>
