@@ -1,15 +1,15 @@
 import create from 'zustand';
-import {devtools} from 'zustand/middleware'
+import { devtools, persist } from 'zustand/middleware';
 
-const useStore = create(devtools(set => ({
-  signIn: false,
-  userName: '',
-  user_location: 'Select your address',
-  locationBox: false,
-  toggleSignIn: () => set(state => ({ signIn: !state.signIn })),
-  setUserName: name => set(() => ({ userName: name })),
-  setLocationBox: val => set(() => ({ locationBox: val })),
-  setUserLocation: location => set(() => ({ user_location: location })),
-})))
+const useAuthStore = create(
+  persist(
+    devtools(set => ({
+      user: null,
+      user_location: 'Select your address',
+      signIn: user => set(() => ({ user })),
+      setUserLocation: location => set(() => ({ user_location: location })),
+    })),
+  ),
+);
 
-export default useStore;
+export default useAuthStore;
