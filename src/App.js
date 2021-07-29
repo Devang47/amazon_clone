@@ -7,7 +7,7 @@ import ShowNavFooter from './ShowNavFooter';
 import Homepage from './Components/Homepage/Homepage';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
-
+import ProductList from './Components/ProductList/ProductList';
 
 function App() {
   
@@ -47,7 +47,7 @@ function App() {
             <MyCart />
           </Route>
           <Route exact path="/products">
-            {/* Larry your product Component goes here */}
+            <ProductList />
           </Route>
         </Switch>
       </ShowNavFooter>

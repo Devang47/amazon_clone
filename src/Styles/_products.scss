@@ -1,0 +1,86 @@
+.productListSearchPage {
+  display: grid;
+  max-width: 1500px;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+  min-width: 1250px;
+  margin: 0 auto;
+  background-color: white;
+  .left_section_filters {
+    border-right: 1px solid #dddddd;
+
+    width: 100%;
+  }
+  .right_section {
+    padding: 20px;
+    .productList {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      .item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-bottom: 1px solid #dddddd;
+        height: fit-content;
+        width: 100%;
+        .featured_product_img {
+          height: 100%;
+          width: 260px;
+          display: grid;
+          place-items: center;
+          img {
+            height: 75%;
+            width: 80%;
+            object-fit: contain;
+          }
+        }
+        .details {
+          padding: 15px;
+          place-self: center;
+          .title {
+            font-weight: 400;
+            font-size: 18px;
+          }
+          .description {
+            font-size: 14px;
+            margin-top: 4px;
+            color: #5a5c5c;
+            width: 100%;
+            font-weight: 400;
+          }
+          .rating {
+            margin-top: 7px;
+            display: flex;
+            gap: 3px;
+            color: rgb(0, 105, 175);
+          }
+          .paperback{
+              margin-top: 10px;
+              font-size: 14px;
+              color: rgb(0, 105, 175);
+            //   text-decoration: underline;
+          }
+          .cost {
+            margin-top: 4px;
+            font-size: 21px;
+            color: rgb(158, 0, 0);
+            strike {
+              font-size: 13px;
+            }
+          }
+          .delivery_time {
+            font-size: 14px;
+            color: #5a5c5c;
+          }
+          .free_delivery {
+            margin-top: 14px;
+            font-size: 14px;
+            color: #5a5c5c;
+          }
+        }
+      }
+    }
+  }
+}
