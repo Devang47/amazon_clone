@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import useStore from '../../store';
+
 const NoCartSection = () => {
-  const signIn = useStore(state => state.signIn);
+  const user = useStore(state => state.user);
 
   return (
     <div className="cart__card">
@@ -18,7 +19,7 @@ const NoCartSection = () => {
         <h1>Your Amazon Basket is empty</h1>
         <p>Shop today's deals</p>
         <div className="signButtons">
-          {signIn ? (
+          {user ? (
             <Link className="sign_in_btn sign_up_btn" to="/">
               Lets add some items!
             </Link>

@@ -1,23 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import useStore from '../../store'
+import useStore from '../../store';
 
 import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
 import LocationBox from './LocationBox';
 
 function Navbar(props) {
-  
   // importing State from our zustand store
-  const signIn = useStore(state => state.signIn);
-  const userName = useStore(state => state.userName)
-  const locationBox = useStore(state => state.locationBox)
-  const setLocationBox = useStore(state => state.setLocationBox);
-  const user_location = useStore(state => state.user_location)
+  const [locationBox, setLocationBox] = useState(false);
+  const user = useStore(state => state.user);
+  const user_location = useStore(state => state.user_location);
   const setUserLocation = useStore(state => state.setUserLocation);
 
-
-    return (
+  return (
     <>
       {/* Location Box Modal goes here */}
       {locationBox && (
@@ -81,10 +77,10 @@ function Navbar(props) {
             </div>
           </div>
           <div className="sign_in_section">
-            <Link to={signIn ? '#' : '/signin'}>
+            <Link to={user ? '#' : '/signin'}>
               <button>
                 <span className="hello">
-                  Hello, {signIn ? userName : 'Sign in'}
+                  Hello, {user ? user?.username : 'Sign in'}
                 </span>
                 <span className="list bold">Account & Lists</span>
               </button>
