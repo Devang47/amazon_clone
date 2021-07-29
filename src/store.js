@@ -9,6 +9,7 @@ const useStore = create(
       signIn: user => set(() => ({ user })),
       setUserLocation: location => set(() => ({ user_location: location })),
     })),
+    {name : 'userdata'}
   ),
 );
 
