@@ -1,15 +1,50 @@
 .productListSearchPage {
   display: grid;
-  max-width: 1500px;
-  grid-template-columns: 25% 75%;
+  max-width: 1600px;
+  grid-template-columns: 20% auto;
   width: 100%;
   min-width: 1250px;
   margin: 0 auto;
   background-color: white;
   .left_section_filters {
     border-right: 1px solid #dddddd;
-
     width: 100%;
+    padding: 25px 50px;
+    font-size: 14px;
+    line-height: 1.5;
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      width: fit-content;
+      &:hover {
+        text-decoration: underline;
+        color: rgb(228, 129, 0);
+      }
+    }
+    label {
+      display: block;
+    }
+    .department,
+    .price,
+    .new_arrivals {
+      margin-top: 10px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .price {
+      margin-top: 15px;
+      .title {
+        margin: 5px 0 2px;
+      }
+    }
+    .sub_categories {
+      margin-left: 15px;
+    }
   }
   .right_section {
     padding: 20px;
@@ -41,43 +76,78 @@
           place-self: center;
           .title {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 19px;
+            line-height: 24px;
           }
           .description {
             font-size: 14px;
-            margin-top: 4px;
+            // margin-top: 4px;
             color: #5a5c5c;
-            width: 100%;
+            width: 80%;
             font-weight: 400;
+            line-height: 20px;
           }
           .rating {
-            margin-top: 7px;
+            margin-top: 5px;
             display: flex;
             gap: 3px;
             color: rgb(0, 105, 175);
+            filter: drop-shadow(0 0 3pxrgba (0, 0, 0, 0.473));
           }
-          .paperback{
-              margin-top: 10px;
-              font-size: 14px;
-              color: rgb(0, 105, 175);
+          .paperback {
+            margin-top: 8px;
+            font-size: 14px;
+            color: rgb(0, 105, 175);
+            font-weight: 500;
             //   text-decoration: underline;
           }
           .cost {
-            margin-top: 4px;
-            font-size: 21px;
+            margin-top: 8px;
+            font-size: 20px;
             color: rgb(158, 0, 0);
-            strike {
+            position: relative;
+            margin-left: 10px;
+            .currency_sign {
+              position: absolute;
+              top: 1px;
+              right: 99.5%;
+              font-size: 14px;
+              margin-right: 3px;
+            }
+            .strike {
               font-size: 13px;
+              color: #5a5c5c;
+              position: relative;
+              margin-left: 5px;
+              &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                content: '';
+                height: 1px;
+                width: 100%;
+                background-color: #8a8a8a;
+              }
             }
           }
           .delivery_time {
+            margin-top: 2px;
             font-size: 14px;
             color: #5a5c5c;
           }
           .free_delivery {
-            margin-top: 14px;
+            margin-top: 4px;
             font-size: 14px;
             color: #5a5c5c;
+          }
+          .limited_deal {
+            padding: 4px 10px;
+            background-color: #b12704;
+            color: white;
+            font-size: 12px;
+            margin: 0px 0 4px;
+            width: fit-content;
           }
         }
       }
