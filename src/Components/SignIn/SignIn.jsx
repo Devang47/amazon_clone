@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import logo from '../../Images/main-logo.png';
-import useAuthStore from '../../store';
+import useStore from '../../store';
 
 function isEmail(email) {
   const re =
@@ -30,7 +30,7 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [errors, setErrors] = useState({});
   const history = useHistory();
-  const signIn = useAuthStore(state => state.signIn);
+  const signIn = useStore(state => state.signIn);
 
   const onSubmit = e => {
     e.preventDefault();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import useAuthStore from '../../store';
+import useStore from '../../store';
 
 import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
@@ -9,9 +9,9 @@ import LocationBox from './LocationBox';
 function Navbar(props) {
   // importing State from our zustand store
   const [locationBox, setLocationBox] = useState(false);
-  const user = useAuthStore(state => state.user);
-  const user_location = useAuthStore(state => state.user_location);
-  const setUserLocation = useAuthStore(state => state.setUserLocation);
+  const user = useStore(state => state.user);
+  const user_location = useStore(state => state.user_location);
+  const setUserLocation = useStore(state => state.setUserLocation);
 
   return (
     <>

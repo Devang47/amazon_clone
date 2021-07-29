@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import useAuthStore from '../../store';
+import useStore from '../../store';
 
 const NoCartSection = () => {
-  const user = useAuthStore(state => state.user);
+  const user = useStore(state => state.user);
 
   return (
     <div className="cart__card">

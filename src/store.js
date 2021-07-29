@@ -1,7 +1,7 @@
 import create from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
-const useAuthStore = create(
+const useStore = create(
   persist(
     devtools(set => ({
       user: null,
@@ -12,4 +12,4 @@ const useAuthStore = create(
   ),
 );
 
-export default useAuthStore;
+export default useStore;
