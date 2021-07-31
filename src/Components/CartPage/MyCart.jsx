@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CartItem from './CartItem';
 import NoCartSection from './NoCartSection';
-import { numberWithCommas } from './utils';
+import { numberWithCommas } from '../../utils';
 
 const dummyCartItems = [
   {

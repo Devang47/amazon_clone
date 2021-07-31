@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { numberWithCommas } from './utils';
+import { numberWithCommas } from '../../utils';
 
 function CartItem({ item: c, removeItem, changeItemQty }) {
   return (
@@ -38,11 +38,7 @@ function CartItem({ item: c, removeItem, changeItemQty }) {
             ))}
           </select>
           |
-          <Link
-            className="actionLink"
-              to='#'
-            onClick={() => removeItem(c.id)}
-          >
+          <Link className="actionLink" to="#" onClick={() => removeItem(c.id)}>
             Delete
           </Link>
           |
