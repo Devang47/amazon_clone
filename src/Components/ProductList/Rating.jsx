@@ -6,6 +6,7 @@ function Rating({ stars }) {
           class="iconify"
           data-icon="ant-design:star-filled"
           data-inline="false"
+          data-height="20px"
           style={{ color: '#abd31d' }}
         ></span>
       ) : stars >= v - 0.5 ? (
@@ -13,6 +14,7 @@ function Rating({ stars }) {
           class="iconify"
           data-icon="bi:star-half"
           data-inline="false"
+          data-height="20px"
           style={{ color: '#abd31d' }}
         ></span>
       ) : (
@@ -20,6 +22,7 @@ function Rating({ stars }) {
           class="iconify"
           data-icon="akar-icons:star"
           data-inline="false"
+          data-height="20px"
           style={{ color: '#abd31d' }}
         ></span>
       )}
