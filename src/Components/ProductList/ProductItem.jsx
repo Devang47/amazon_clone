@@ -35,9 +35,10 @@ function ProductItem({ product }) {
             class="iconify"
             data-icon="akar-icons:chevron-down"
             data-inline="true"
-            data-width="8px"
           ></span>{' '}
-          <span className="reviews">{product.numReviews}</span>
+          <span className="reviews">
+            {numberWithCommas(product.numReviews)}
+          </span>
         </div>
         {/* <div className="paperback">Paperback</div> */}
         <div className="limited_deal">Limited time deal</div>

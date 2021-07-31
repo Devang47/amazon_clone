@@ -96,6 +96,15 @@
             color: rgb(0, 105, 175);
             cursor: pointer;
             filter: drop-shadow(0 0 3px rgba (0, 0, 0, 0.473));
+
+            .reviews {
+              color: #007185;
+              font-size: small;
+              &:hover {
+                color: #c7511f;
+                text-decoration: underline;
+              }
+            }
           }
           .paperback {
             margin-top: 8px;
