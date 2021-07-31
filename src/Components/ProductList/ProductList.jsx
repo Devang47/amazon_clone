@@ -57,7 +57,7 @@ function ProductList() {
       <section className="right_section">
         <div className="productList">
           {products.map(pdt => (
-            <ProductItem product={pdt} />
+            <ProductItem key={pdt.id} product={pdt} />
           ))}
         </div>
       </section>

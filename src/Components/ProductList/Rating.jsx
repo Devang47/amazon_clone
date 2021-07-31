@@ -6,7 +6,7 @@ function Rating({ stars }) {
           class="iconify"
           data-icon="ant-design:star-filled"
           data-inline="false"
-          data-height="20px"
+          data-height="22px"
           style={{ color: '#abd31d' }}
         ></span>
       ) : stars >= v - 0.5 ? (
