@@ -8,7 +8,7 @@ const NoCartSection = () => {
     <div className="cart__card">
       <div className="imageCart">
         <span
-          class="iconify"
+          className="iconify"
           data-icon="emojione-monotone:shopping-cart"
           data-inline="false"
           data-height="100px"

@@ -2,16 +2,25 @@ import React from 'react';
 import products from '../../Data/products/index';
 import Filters from './Filters';
 import ProductItem from './ProductItem';
+import useStore from '../../store';
 
 function ProductList() {
+  const Query = useStore(state => state.Query);
+
   return (
     <section className="productListSearchPage">
       <Filters />
       <section className="right_section">
         <div className="productList">
-          {products.map(pdt => (
-            <ProductItem key={pdt.id} product={pdt} />
-          ))}
+          {!Query
+            ? products.map(pdt => <ProductItem key={pdt.id} product={pdt} />)
+            : products.map(
+                pdt =>
+                  (pdt.name.toLowerCase().includes(Query.toLowerCase()) ||
+                  pdt.keywords.indexOf(Query.toLowerCase()) !== -1) && (
+                    <ProductItem key={pdt.id} product={pdt} />
+                  ),
+              )}
         </div>
       </section>
     </section>

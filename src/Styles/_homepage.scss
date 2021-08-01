@@ -1,10 +1,13 @@
+$placeholder: #009fb7;
+
+
 .product_banner {
   height: 650px;
   width: 100%;
   max-width: 1500px;
   min-width: 1250px;
   margin: 0 auto;
-  background-color: #f79b34;
+  background-color: $placeholder;
   background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/cnnjpp/July21/Nord2/Hero/Nord_2_Jul29_1500x600._CB645123121_.jpg');
   background-position: center;
   background-size: cover;
@@ -24,6 +27,8 @@
     width: 100%;
   }
 }
+
+
 .products {
   max-width: 1500px;
   width: 100%;
@@ -66,7 +71,7 @@
           .img {
             display: block;
             height: 80%;
-            background-color: coral;
+            background-color: $placeholder;
             width: 100%;
           }
           .caption {
@@ -87,7 +92,7 @@
         width: 100%;
         margin-top: 10px;
         display: block;
-        background-color: coral;
+        background-color: $placeholder;
       }
       .read_more {
         position: absolute;
@@ -173,7 +178,7 @@
         a {
           .slider_item {
             height: 222px;
-            background-color: coral;
+            background-color: $placeholder;
             img {
               object-fit: contain;
               height: 100%;

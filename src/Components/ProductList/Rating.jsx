@@ -3,27 +3,27 @@ function Rating({ stars }) {
     <>
       {stars > v ? (
         <span
-          class="iconify"
+          className="iconify"
           data-icon="ant-design:star-filled"
           data-inline="false"
           data-height="22px"
-          style={{ color: '#abd31d' }}
+          style={{ color: '#ffa41c' }}
         ></span>
       ) : stars >= v - 0.5 ? (
         <span
-          class="iconify"
+          className="iconify"
           data-icon="bi:star-half"
           data-inline="false"
           data-height="20px"
-          style={{ color: '#abd31d' }}
+          style={{ color: '#ffa41c' }}
         ></span>
       ) : (
         <span
-          class="iconify"
+          className="iconify"
           data-icon="akar-icons:star"
           data-inline="false"
           data-height="20px"
-          style={{ color: '#abd31d' }}
+          style={{ color: '#ffa41c' }}
         ></span>
       )}
     </>

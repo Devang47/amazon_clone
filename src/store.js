@@ -6,10 +6,12 @@ const useStore = create(
     devtools(set => ({
       user: null,
       user_location: 'Select your address',
+      Query: '',
+      setQuery: query => set(() => ({Query : query})),
       signIn: user => set(() => ({ user })),
       setUserLocation: location => set(() => ({ user_location: location })),
     })),
-    {name : 'userdata'}
+    { name: 'userdata' },
   ),
 );
 

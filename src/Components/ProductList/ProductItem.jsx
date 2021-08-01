@@ -28,7 +28,6 @@ function ProductItem({ product }) {
         <h2 className="title">
           <Link to={`/products/${product.id}`}>{product.name}</Link>
         </h2>
-        {/* <h3 className="description">{product.description}</h3> */}
         <Link
           to={`/products/${product.id}`}
           className="rating"
@@ -38,7 +37,7 @@ function ProductItem({ product }) {
         >
           <Rating stars={product.stars} />{' '}
           <span
-            class="iconify"
+            className="iconify"
             data-icon="akar-icons:chevron-down"
             data-inline="true"
           ></span>{' '}

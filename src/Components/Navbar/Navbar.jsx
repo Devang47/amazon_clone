@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useHistory } from 'react-router-dom';
 import useStore from '../../store';
 
 import logo from '../../Images/main-logo.png';
@@ -12,6 +12,10 @@ function Navbar(props) {
   const user = useStore(state => state.user);
   const user_location = useStore(state => state.user_location);
   const setUserLocation = useStore(state => state.setUserLocation);
+  const history = useHistory();
+
+    const Query = useStore(state => state.Query);
+    const setQuery = useStore(state => state.setQuery)
 
   return (
     <>
@@ -48,7 +52,10 @@ function Navbar(props) {
             </button>
           </div>
           <div className="searchbox">
-            <form>
+            <form onSubmit={(e) => {
+              e.preventDefault() 
+              history.push('/products')
+              }}>
               <label htmlFor="categories">
                 <select name="categories" id="categories">
                   <option value="All">1</option>
@@ -57,7 +64,7 @@ function Navbar(props) {
                   <option value="Appliances">4</option>
                 </select>
               </label>
-              <input type="text" />
+              <input type="text" value={Query} onChange={(e) => setQuery(e.target.value)} />
               <button className="search-btn" type="submit">
                 <span
                   className="iconify"

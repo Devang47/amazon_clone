@@ -6,11 +6,11 @@ function Footer() {
   return (
     <>
       <footer>
-        <a href="#header">
+        <Link to={() => window.scrollTo(0, 0)}>
           <div className="back_to_top">
             <span>Back to top</span>
           </div>
-        </a>
+        </Link>
         <div className="footer_links">
           <div className="footer_list" id="footer_list1">
             <ul>
