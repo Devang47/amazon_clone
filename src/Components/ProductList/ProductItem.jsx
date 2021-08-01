@@ -35,12 +35,12 @@ function ProductItem({ product }) {
             product.numReviews
           } ratings)`}
         >
-          <Rating stars={product.stars} />{' '}
+          <Rating stars={product.stars} />
           <span
             className="iconify"
             data-icon="akar-icons:chevron-down"
             data-inline="true"
-          ></span>{' '}
+          ></span>
           <span className="reviews">
             {numberWithCommas(product.numReviews)}
           </span>
@@ -66,7 +66,8 @@ function ProductItem({ product }) {
         </div>
         <div className="delivery_time">
           {/* need to get prime image here */}
-          {product.fullfilled && 'prime'} Get it by{' '}
+          
+          {product.fullfilled && <i className='prime'></i>} Get it by
           <strong> {formatDate(deliveryDate)} </strong>
         </div>
         <div className="free_delivery">

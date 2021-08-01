@@ -66,7 +66,7 @@ const laptops = [
       'https://images-eu.ssl-images-amazon.com/images/I/41VDgHcJOHS._SY300_SX300_QL70_FMwebp_.jpg',
     price: 65990,
     discount: 18,
-    stars: 0,
+    stars: 5,
     numReviews: 0,
     deliveryDays: 9,
     fullfilled: true,
