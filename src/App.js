@@ -8,33 +8,26 @@ import Homepage from './Components/Homepage/Homepage';
 import MyCart from './Components/CartPage/MyCart';
 import SignIn from './Components/SignIn/SignIn';
 import ProductList from './Components/ProductList/ProductList';
+import SingleProduct from './Components/SingleProduct/SingleProduct';
 
 function App() {
   const setQuery = useStore(state => state.setQuery);
 
   useEffect(() => {
     setQuery('');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <Router>
       <ShowNavFooter>
         <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route exact path="/register">
-            <Homepage />
-          </Route>
-          <Route exact path="/signin">
-            <SignIn />
-          </Route>
-          <Route exact path="/cart">
-            <MyCart />
-          </Route>
-          <Route exact path="/products">
-            <ProductList />
-          </Route>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/register" component={Homepage} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/cart" component={MyCart} />
+          <Route exact path="/products" component={ProductList} />
+          <Route exact path="/products/:productId" component={SingleProduct} />
         </Switch>
       </ShowNavFooter>
     </Router>
