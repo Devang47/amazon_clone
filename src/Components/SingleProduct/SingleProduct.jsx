@@ -58,7 +58,7 @@ function DeliveryFeature() {
           </div>
           <div class="icon-content">
             <Link class="amz-link" href="#">
-              {i.name}{' '}
+              {i.name}
             </Link>
           </div>
         </div>
@@ -85,7 +85,7 @@ function SingleProduct() {
         <div className="product-details">
           <h1>{product.name}</h1>
           <p>
-            Category:{' '}
+            Category:
             <Link className="amz-link" to="#">
               {capitalizeFirst(product.category)}
             </Link>
@@ -148,7 +148,7 @@ function SingleProduct() {
             Sold by <span className="amz-link">Random Seller</span>
             {product.fullfilled && (
               <span>
-                {' '}
+                
                 and <span className="amz-link">Fulfilled by Amazon</span>
               </span>
             )}
@@ -157,7 +157,7 @@ function SingleProduct() {
             {product.description} Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Nobis corporis dolore eos veritatis deserunt non?
             Consequuntur possimus placeat iste earum at quos facere facilis
-            dolores voluptate, libero officiis itaque nesciunt.{' '}
+            dolores voluptate, libero officiis itaque nesciunt.
           </p>
         </div>
         <ProductCart product={product} />
