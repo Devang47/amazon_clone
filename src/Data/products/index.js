@@ -39,4 +39,8 @@ function shuffle(array) {
 
 const products = shuffle([...mobiles, ...laptops]);
 
+export function getProductById(id) {
+  return products.find(p => p.id === id);
+}
+
 export default products;
