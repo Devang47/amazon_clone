@@ -113,23 +113,18 @@ function SingleProduct() {
             <tr>
               <th>M.R.P.:</th>
               <td className="strike">
-                ₹{numberWithCommas(priceWithoutDiscount.toFixed(2))}
+                ₹{numberWithCommas(priceWithoutDiscount)}
               </td>
             </tr>
             <tr>
               <th>Deal Price:</th>
-              <td className="price">
-                ₹{numberWithCommas(product.price.toFixed(2))}
-              </td>
+              <td className="price">₹{numberWithCommas(product.price)}</td>
             </tr>
             <tr>
               <th>You Save:</th>
               <td className="save">
-                ₹
-                {numberWithCommas(
-                  (priceWithoutDiscount - product.price).toFixed(2),
-                )}{' '}
-                ({product.discount}%)
+                ₹{numberWithCommas(priceWithoutDiscount - product.price)} (
+                {product.discount}%)
               </td>
             </tr>
             <tr>

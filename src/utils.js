@@ -1,5 +1,9 @@
 export function numberWithCommas(x) {
-  return x.toLocaleString('en-IN');
+  return x.toLocaleString('en-IN', {
+    maximumFractionDigits: 2,
+    style: 'currency',
+    currency: 'INR',
+  });
 }
 
 export function capitalizeFirst(str) {
