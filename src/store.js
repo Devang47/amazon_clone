@@ -36,7 +36,7 @@ export const useCartStore = create(
         })),
       changeItemQty: (itemId, qty) =>
         set(state => {
-          if (qty === '0') {
+          if (qty === 0) {
             state.removeItem(itemId);
           } else {
             const itemIdx = state.cartItems.findIndex(i => i.id === itemId);
