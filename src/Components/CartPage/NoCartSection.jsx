@@ -20,7 +20,7 @@ const NoCartSection = () => {
         <p>Shop today's deals</p>
         <div className="signButtons">
           {user ? (
-            <Link className="sign_in_btn sign_up_btn" to="/">
+            <Link className="sign_in_btn sign_up_btn" to="/products">
               Lets add some items!
             </Link>
           ) : (

@@ -22,11 +22,11 @@ export const useCartStore = create(
       addToCart: (pdt, qty) =>
         set(state => {
           const itemIdx = state.cartItems.findIndex(i => i.id === pdt.id);
-          if (itemIdx === -1) {
+          if (itemIdx !== -1) {
             state.changeItemQty(pdt.id, qty);
           } else {
             return {
-              cartItems: [...state.cartItems, { ...pdt, qty: parseInt(qty) }],
+              cartItems: [...state.cartItems, { ...pdt, qty }],
             };
           }
         }),
@@ -43,12 +43,13 @@ export const useCartStore = create(
             const newItems = state.cartItems.filter(i => i.id !== itemId);
             newItems.splice(itemIdx, 0, {
               ...state.cartItems[itemIdx],
-              qty: parseInt(qty),
+              qty,
             });
             return { cartItems: newItems };
           }
         }),
     })),
+    { name: 'cartData' },
   ),
 );
 

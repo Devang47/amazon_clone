@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useCartStore } from '../../store';
 import { numberWithCommas } from '../../utils';
 
-function CartItem({ item: c, removeItem, changeItemQty }) {
+function CartItem({ item: c }) {
+  const removeItem = useCartStore(state => state.removeItem);
+  const changeItemQty = useCartStore(state => state.changeItemQty);
   return (
     <div className="cart__item" key={c.id}>
       <div className="cart__itemImage">
@@ -28,7 +31,9 @@ function CartItem({ item: c, removeItem, changeItemQty }) {
           <select
             name="qty"
             id="qty"
-            onChange={changeItemQty(c.id)}
+            onChange={e => {
+              changeItemQty(c.id, parseInt(e.target.value));
+            }}
             value={c.qty}
           >
             {new Array(9).fill(1).map((_, i) => (

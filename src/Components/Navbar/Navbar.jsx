@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import useStore from '../../store';
+import useStore, { useCartStore } from '../../store';
 
 import logo from '../../Images/main-logo.png';
 import CategoriesNav from './CategoriesNav';
@@ -15,6 +15,8 @@ function Navbar(props) {
 
   const Query = useStore(state => state.Query);
   const setQuery = useStore(state => state.setQuery);
+
+  const cartItems = useCartStore(state => state.cartItems);
 
   return (
     <>
@@ -111,7 +113,7 @@ function Navbar(props) {
                 <circle cx="10.5" cy="19.5" r="1.5" fill="#626262" />
                 <circle cx="17.5" cy="19.5" r="1.5" fill="#626262" />
               </svg>
-              <div className="cartItems">0</div>
+              <div className="cartItems">{cartItems.length}</div>
               <div className="cart_text bold">Cart</div>
             </Link>
           </div>
