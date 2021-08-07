@@ -43,4 +43,12 @@ export function getProductById(id) {
   return products.find(p => p.id === id);
 }
 
+export function getProductsByCategory(category, excludeId) {
+  return products.filter(p =>
+    excludeId
+      ? p.category === category && p.id !== excludeId
+      : p.category === category,
+  );
+}
+
 export default products;

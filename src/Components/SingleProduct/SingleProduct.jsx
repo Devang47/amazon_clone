@@ -3,6 +3,7 @@ import { getProductById } from '../../Data/products/index';
 import { capitalizeFirst, formatDate, numberWithCommas } from '../../utils';
 import Rating from '../ProductList/Rating';
 import ProductCart from './ProductCart';
+import ProductsCarousel from './ProductsCarousel';
 
 function DeliveryFeature() {
   const items = [
@@ -76,90 +77,93 @@ function SingleProduct() {
   deliveryDate.setDate(deliveryDate.getDate() + product.deliveryDays);
 
   return (
-    <div className="singleProduct">
-      <div className="product-image">
-        <img src={product.image} alt={product.name} />
-      </div>
-      <div className="product-details">
-        <h1>{product.name}</h1>
-        <p>
-          Category:{' '}
-          <Link className="amz-link" to="#">
-            {capitalizeFirst(product.category)}
-          </Link>
-        </p>
-        <div className="ratings">
-          <Rating stars={product.stars} />
-          <span
-            className="iconify"
-            data-icon="akar-icons:chevron-down"
-            data-inline="true"
-          ></span>
-          <span className="reviews">
-            {numberWithCommas(product.numReviews)} ratings
-          </span>
+    <>
+      <div className="singleProduct">
+        <div className="product-image">
+          <img src={product.image} alt={product.name} />
         </div>
-        {product.fullfilled && (
+        <div className="product-details">
+          <h1>{product.name}</h1>
           <p>
-            <img
-              className="fullfilled-image"
-              src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
-              alt="fullfilled"
-            />
+            Category:{' '}
+            <Link className="amz-link" to="#">
+              {capitalizeFirst(product.category)}
+            </Link>
           </p>
-        )}
-        <div className="price-details">
-          <table>
-            <tr>
-              <th>M.R.P.:</th>
-              <td className="strike">
-                ₹{numberWithCommas(priceWithoutDiscount)}
-              </td>
-            </tr>
-            <tr>
-              <th>Deal Price:</th>
-              <td className="price">₹{numberWithCommas(product.price)}</td>
-            </tr>
-            <tr>
-              <th>You Save:</th>
-              <td className="save">
-                ₹{numberWithCommas(priceWithoutDiscount - product.price)} (
-                {product.discount}%)
-              </td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>Inclusive of all taxes</td>
-            </tr>
-          </table>
-        </div>
-        <p className="delivery-info">
-          <span className="free-delivery amz-link">
-            {product.price > 500 ? 'FREE Delivery' : 'Delivery at'}:
-          </span>
-          <strong>{formatDate(deliveryDate)}</strong>
-          <span className="amz-link">Details</span>
-        </p>
-        <DeliveryFeature />
-        <span className="stock">In Stock.</span>
-        <p>
-          Sold by <span className="amz-link">Random Seller</span>
-          {product.fullfilled && (
-            <span>
-              {' '}
-              and <span className="amz-link">Fulfilled by Amazon</span>
+          <div className="ratings">
+            <Rating stars={product.stars} />
+            <span
+              className="iconify"
+              data-icon="akar-icons:chevron-down"
+              data-inline="true"
+            ></span>
+            <span className="reviews">
+              {numberWithCommas(product.numReviews)} ratings
             </span>
+          </div>
+          {product.fullfilled && (
+            <p>
+              <img
+                className="fullfilled-image"
+                src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                alt="fullfilled"
+              />
+            </p>
           )}
-        </p>
-        <p style={{ marginTop: '1rem' }}>
-          {product.description} Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Nobis corporis dolore eos veritatis deserunt non?
-          Consequuntur possimus placeat iste earum at quos facere facilis
-          dolores voluptate, libero officiis itaque nesciunt.{' '}
-        </p>
+          <div className="price-details">
+            <table>
+              <tr>
+                <th>M.R.P.:</th>
+                <td className="strike">
+                  ₹{numberWithCommas(priceWithoutDiscount)}
+                </td>
+              </tr>
+              <tr>
+                <th>Deal Price:</th>
+                <td className="price">₹{numberWithCommas(product.price)}</td>
+              </tr>
+              <tr>
+                <th>You Save:</th>
+                <td className="save">
+                  ₹{numberWithCommas(priceWithoutDiscount - product.price)} (
+                  {product.discount}%)
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Inclusive of all taxes</td>
+              </tr>
+            </table>
+          </div>
+          <p className="delivery-info">
+            <span className="free-delivery amz-link">
+              {product.price > 500 ? 'FREE Delivery' : 'Delivery at'}:
+            </span>
+            <strong>{formatDate(deliveryDate)}</strong>
+            <span className="amz-link">Details</span>
+          </p>
+          <DeliveryFeature />
+          <span className="stock">In Stock.</span>
+          <p>
+            Sold by <span className="amz-link">Random Seller</span>
+            {product.fullfilled && (
+              <span>
+                {' '}
+                and <span className="amz-link">Fulfilled by Amazon</span>
+              </span>
+            )}
+          </p>
+          <p style={{ marginTop: '1rem' }}>
+            {product.description} Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Nobis corporis dolore eos veritatis deserunt non?
+            Consequuntur possimus placeat iste earum at quos facere facilis
+            dolores voluptate, libero officiis itaque nesciunt.{' '}
+          </p>
+        </div>
+        <ProductCart product={product} />
       </div>
-      <ProductCart product={product} />
-    </div>
+      <ProductsCarousel productId={product.id} category={product.category} />
+    </>
   );
 }
 
