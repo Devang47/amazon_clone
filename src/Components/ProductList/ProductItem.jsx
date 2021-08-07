@@ -1,14 +1,6 @@
 import { Link } from 'react-router-dom';
-import { numberWithCommas } from '../../utils';
+import { formatDate, numberWithCommas } from '../../utils';
 import Rating from './Rating';
-
-function formatDate(dt) {
-  return dt.toLocaleString('en-CA', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  });
-}
 
 function ProductItem({ product }) {
   const priceWithoutDiscount = parseInt(
@@ -66,8 +58,7 @@ function ProductItem({ product }) {
         </div>
         <div className="delivery_time">
           {/* need to get prime image here */}
-          
-          {product.fullfilled && <i className='prime'></i>} Get it by
+          {product.fullfilled && <i className="prime"></i>} Get it by
           <strong> {formatDate(deliveryDate)} </strong>
         </div>
         <div className="free_delivery">
