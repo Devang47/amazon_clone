@@ -43,7 +43,7 @@ function MyCart() {
 
   const totalItems = cartItems.reduce((prev, curr) => prev + curr.qty, 0);
   const totalPrice = cartItems.reduce(
-    (prev, curr) => prev + (curr.qty + curr.price),
+    (prev, curr) => prev + curr.qty * curr.price,
     0,
   );
   const hasFreeDelivery = cartItems.some(i => i.price > 500);
