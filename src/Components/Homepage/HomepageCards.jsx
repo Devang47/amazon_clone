@@ -9,28 +9,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/61bXjE5ESwS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/61bXjE5ESwS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -45,28 +65,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/61bXjE5ESwS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Z+l05eSIS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://m.media-amazon.com/images/I/61bXjE5ESwS._AC_UY327_QL65_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -78,7 +118,12 @@ function HomepageCards(Props) {
       <div className="item" id="item3">
         <h2>Exclusively for Prime members</h2>
         <div className="banner_img-wrapper">
-          <span className="banner_img" src="#" alt="Display Image"></span>
+          <span className="banner_img" src="#" alt="Display Image">
+            <img
+              src="https://m.media-amazon.com/images/I/51MKXqHKBQL._SX466_.jpg"
+              alt="product"
+            />
+          </span>
         </div>
         <div className="read_more">
           <Link to="/products">See more</Link>
@@ -93,28 +138,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -128,28 +193,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -163,28 +248,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -198,28 +303,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -234,11 +359,11 @@ function HomepageCards(Props) {
           {[1, 2, 3, 4, 5].map(e => {
             return (
               <React.Fragment key={e}>
-                <Link to="/products">
+                <Link to="/products/logt234">
                   <div className="slider_item">
                     <div className="item_thumbnail">
                       <img
-                        src="https://images-na.ssl-images-amazon.com/images/I/91qtcZ6c2yL._SX679_.jpg"
+                        src="https://images-eu.ssl-images-amazon.com/images/I/41PDv5n2OgL._SY300_SX300_QL70_FMwebp_.jpg"
                         alt="Item thumbnail"
                       />
                     </div>
@@ -252,11 +377,11 @@ function HomepageCards(Props) {
                     </div>
                   </div>
                 </Link>
-                <Link to="/products">
+                <Link to="/products/pou7gy1">
                   <div className="slider_item">
                     <div className="item_thumbnail">
                       <img
-                        src="https://images-eu.ssl-images-amazon.com/images/I/41znff7SgPL._SX300_SY300_QL70_FMwebp_.jpg"
+                        src="https://images-eu.ssl-images-amazon.com/images/I/41KqaHvwcpL._SX300_SY300_QL70_FMwebp_.jpg"
                         alt="Item thumbnail"
                       />
                     </div>
@@ -278,7 +403,12 @@ function HomepageCards(Props) {
       <div className="item" id="item10">
         <h2>Effective dishwashing for Indian cooking</h2>
         <div className="banner_img-wrapper">
-          <span className="banner_img" src="#" alt="Display Image"></span>
+          <span className="banner_img" src="#" alt="Display Image">
+            <img
+              src="https://m.media-amazon.com/images/I/51MKXqHKBQL._SX466_.jpg"
+              alt="product"
+            />
+          </span>
         </div>
         <div className="read_more">
           <Link to="/products">See more</Link>
@@ -287,7 +417,12 @@ function HomepageCards(Props) {
       <div className="item" id="item11">
         <h2>Up to 45% off | Bedding & linen | Amazon Brands & more</h2>
         <div className="banner_img-wrapper">
-          <span className="banner_img" src="#" alt="Display Image"></span>
+          <span className="banner_img" src="#" alt="Display Image">
+            <img
+              src="https://m.media-amazon.com/images/I/51MKXqHKBQL._SX466_.jpg"
+              alt="product"
+            />
+          </span>
         </div>
         <div className="read_more">
           <Link to="/products">See more</Link>
@@ -298,28 +433,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -333,28 +488,48 @@ function HomepageCards(Props) {
         <div className="inner_card">
           <div className="inr_itm inr_itm1">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm2">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm3">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
 
           <div className="inr_itm inr_itm4">
             <Link to="/products">
-              <span className="img"></span>
+              <span className="img">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="product"
+                />
+              </span>
               <span className="caption">Smart LED TVs</span>
             </Link>
           </div>
@@ -372,18 +547,18 @@ function HomepageCards(Props) {
           {[1, 2, 3, 4, 5].map(e => {
             return (
               <React.Fragment key={e}>
-                <Link to="/products">
+                <Link to="/products/98dfk21">
                   <div className="slider_item">
                     <img
-                      src="https://images-eu.ssl-images-amazon.com/images/I/41znff7SgPL._SX300_SY300_QL70_FMwebp_.jpg"
+                      src="https://images-eu.ssl-images-amazon.com/images/I/41PvzSczR2S._SY300_SX300_QL70_FMwebp_.jpg"
                       alt="Product"
                     />
                   </div>
                 </Link>
-                <Link to="/products">
+                <Link to="/products/1alf3x2">
                   <div className="slider_item">
                     <img
-                      src="https://images-na.ssl-images-amazon.com/images/I/91qtcZ6c2yL._SX679_.jpg"
+                      src="https://images-eu.ssl-images-amazon.com/images/I/31LBYv2eEbS._SX300_SY300_QL70_FMwebp_.jpg"
                       alt="Product"
                     />
                   </div>
@@ -403,7 +578,7 @@ function HomepageCards(Props) {
                 <Link to="/products">
                   <div className="slider_item">
                     <img
-                      src="https://images-eu.ssl-images-amazon.com/images/I/51ceWNX9JzL._SX300_SY300_QL70_FMwebp_.jpg"
+                      src="https://m.media-amazon.com/images/I/71DYAkLrA1L._AC_UL480_QL65_.jpg"
                       alt="Product"
                     />
                   </div>
@@ -411,7 +586,7 @@ function HomepageCards(Props) {
                 <Link to="/products">
                   <div className="slider_item">
                     <img
-                      src="https://images-eu.ssl-images-amazon.com/images/I/41zcknWdCWL._SX300_SY300_QL70_FMwebp_.jpg"
+                      src="https://m.media-amazon.com/images/I/816dGN-lQ3L._AC_UL480_QL65_.jpg"
                       alt="Product"
                     />
                   </div>
