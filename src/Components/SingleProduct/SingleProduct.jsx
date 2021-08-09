@@ -41,23 +41,24 @@ function DeliveryFeature() {
     <div className="icon-farm-wrapper">
       {items.map(i => (
         <div
+          key={i.dataId}
           data-name={i.dataId}
           id={i.dataId}
-          class="icon-container"
+          className="icon-container"
           data-csa-c-id={i.id}
         >
-          <div class="a-section a-spacing-none">
+          <div className="a-section a-spacing-none">
             <img
               src={i.image}
-              class="icon-box"
+              className="icon-box"
               id=""
               style={{ height: '35px', width: '35px' }}
               alt={i.name}
               data-a-image-source={i.image}
             />
           </div>
-          <div class="icon-content">
-            <Link class="amz-link" href="#">
+          <div className="icon-content">
+            <Link className="amz-link" to="#">
               {i.name}
             </Link>
           </div>
@@ -77,7 +78,7 @@ function SingleProduct() {
   deliveryDate.setDate(deliveryDate.getDate() + product.deliveryDays);
 
   return (
-    <>
+    <div className="singleProduct_page">
       <div className="singleProduct">
         <div className="product-image">
           <img src={product.image} alt={product.name} />
@@ -85,7 +86,7 @@ function SingleProduct() {
         <div className="product-details">
           <h1>{product.name}</h1>
           <p>
-            Category:
+            Category:{' '}
             <Link className="amz-link" to="#">
               {capitalizeFirst(product.category)}
             </Link>
@@ -112,27 +113,29 @@ function SingleProduct() {
           )}
           <div className="price-details">
             <table>
-              <tr>
-                <th>M.R.P.:</th>
-                <td className="strike">
-                  ₹{numberWithCommas(priceWithoutDiscount)}
-                </td>
-              </tr>
-              <tr>
-                <th>Deal Price:</th>
-                <td className="price">₹{numberWithCommas(product.price)}</td>
-              </tr>
-              <tr>
-                <th>You Save:</th>
-                <td className="save">
-                  ₹{numberWithCommas(priceWithoutDiscount - product.price)} (
-                  {product.discount}%)
-                </td>
-              </tr>
-              <tr>
-                <th></th>
-                <td>Inclusive of all taxes</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>M.R.P.:</th>
+                  <td className="strike">
+                    ₹{numberWithCommas(priceWithoutDiscount)}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Deal Price:</th>
+                  <td className="price">₹{numberWithCommas(product.price)}</td>
+                </tr>
+                <tr>
+                  <th>You Save:</th>
+                  <td className="save">
+                    ₹{numberWithCommas(priceWithoutDiscount - product.price)} (
+                    {product.discount}%)
+                  </td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Inclusive of all taxes</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <p className="delivery-info">
@@ -162,7 +165,7 @@ function SingleProduct() {
         <ProductCart product={product} />
       </div>
       <ProductsCarousel productId={product.id} category={product.category} />
-    </>
+    </div>
   );
 }
 

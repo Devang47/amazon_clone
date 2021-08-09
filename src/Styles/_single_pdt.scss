@@ -1,3 +1,10 @@
+.singleProduct_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
 .singleProduct {
   display: grid;
   grid-template-columns: 35% auto 244px;
@@ -5,7 +12,6 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 3rem 1rem;
-  background-color: #fff;
 
   .product-image {
     padding: 2rem 0.3rem;

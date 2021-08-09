@@ -46,11 +46,11 @@ function ProductCart({ product }) {
         </button>
       </div>
       <div className="secure-transaction">
-        <span class="iconify" data-icon="bx:bxs-lock-alt"></span>
+        <span className="iconify" data-icon="bx:bxs-lock-alt"></span>
         <p>Secure transaction</p>
       </div>
       <div className="delivery-details">
-        <span class="iconify" data-icon="akar-icons:location"></span>
+        <span className="iconify" data-icon="akar-icons:location"></span>
         <p className="no-underline amz-link">Deliver to {user_location}</p>
       </div>
     </div>
