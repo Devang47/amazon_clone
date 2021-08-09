@@ -79,7 +79,7 @@
 
   &__item {
     display: grid;
-    grid-template-columns: 210px auto 14.98%;
+    grid-template-columns: 250px auto 14.98%;
     grid-gap: 1.4rem;
     margin-bottom: 1.5rem;
     border-bottom: #ccc 1px solid;
@@ -143,7 +143,7 @@
     display: block;
     overflow-y: hidden;
     height: 210px;
-    width: 210px;
+    width: 250px;
     img {
       height: 100%;
       width: 100%;

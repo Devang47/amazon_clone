@@ -35,7 +35,15 @@ function ProductCart({ product }) {
         >
           Add to Cart
         </button>
-        <button className="sign_in_btn buy_now_btn">Buy Now</button>
+        <button
+          className="sign_in_btn buy_now_btn"
+          onClick={() => {
+            addToCart(product, qty);
+            history.push('/cart');
+          }}
+        >
+          Buy Now
+        </button>
       </div>
       <div className="secure-transaction">
         <span class="iconify" data-icon="bx:bxs-lock-alt"></span>

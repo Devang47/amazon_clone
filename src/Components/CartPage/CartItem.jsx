@@ -11,7 +11,7 @@ function CartItem({ item: c }) {
         <img src={c.image} alt={c.name} />
       </div>
       <div className="cart__itemInfo">
-        <Link className="cart__itemName" to="/cart">
+        <Link className="cart__itemName" to={`/products/${c.id}`}>
           {c.name}
         </Link>
         <small className="cart__itemStock">In Stock</small>

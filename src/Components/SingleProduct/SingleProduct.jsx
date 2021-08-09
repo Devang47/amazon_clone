@@ -145,11 +145,10 @@ function SingleProduct() {
           <DeliveryFeature />
           <span className="stock">In Stock.</span>
           <p>
-            Sold by <span className="amz-link">Random Seller</span>
+            Sold by <span className="amz-link"> Random Seller </span>
             {product.fullfilled && (
               <span>
-                
-                and <span className="amz-link">Fulfilled by Amazon</span>
+                 and  <span className="amz-link"> Fulfilled by Amazon </span>
               </span>
             )}
           </p>
