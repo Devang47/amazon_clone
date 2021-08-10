@@ -48,14 +48,12 @@ function ProductsCarousel({ category, productId }) {
     if (direction === 'right') {
       const maxItemsInView = windowWidth / 400;
       const triesToScroll = count / maxItemsInView;
-      console.log(triesToScroll, pos);
       if (pos + 2 < triesToScroll) setPos(pos + 1);
     } else {
       const translateStyle = carouselfRef.current.style.transform;
       const translatePos = translateStyle
         .replace('translateX(calc(', '')
         .replace('%))', '');
-      console.log(translateStyle, translatePos);
       if (!parseInt(translatePos) < 1) {
         setPos(pos - 1);
       }
