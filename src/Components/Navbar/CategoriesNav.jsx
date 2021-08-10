@@ -6,42 +6,42 @@ function CategoriesNav() {
     <>
       <ul className="categories_nav">
         <li>
-          <Link to='#'className="bold">
+          <Link to="/products" className="bold">
             All
           </Link>
         </li>
         <li>
-          <Link to='#'>Amazon Pay</Link>
+          <Link to="/products">Amazon Pay</Link>
         </li>
         <li>
-          <Link to='#'>Mobiles</Link>
+          <Link to="/products">Mobiles</Link>
         </li>
         <li>
-          <Link to='#'>Fashion</Link>
+          <Link to="/products">Fashion</Link>
         </li>
         <li>
-          <Link to='#'>Electronics</Link>
+          <Link to="/products">Electronics</Link>
         </li>
         <li>
-          <Link to='#'>New Releases</Link>
+          <Link to="/products">New Releases</Link>
         </li>
         <li>
-          <Link to='#'>Prime</Link>
+          <Link to="/products">Prime</Link>
         </li>
         <li>
-          <Link to='#'>Computers</Link>
+          <Link to="/products">Computers</Link>
         </li>
         <li>
-          <Link to='#'>Pet Supplies</Link>
+          <Link to="/products">Pet Supplies</Link>
         </li>
         <li>
-          <Link to='#'>Health, Household & Personal Care</Link>
+          <Link to="/products">Health, Household & Personal Care</Link>
         </li>
         <li>
-          <Link to='#'>Gift Ideas</Link>
+          <Link to="/products">Gift Ideas</Link>
         </li>
         <li>
-          <Link to='#'>Customer Service</Link>
+          <Link to="/products">Customer Service</Link>
         </li>
       </ul>
     </>
