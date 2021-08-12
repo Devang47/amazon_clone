@@ -1,2 +1,2 @@
 ## Amazon Clone 
-This project is currently in development phase.
+In this project we've tried to make a Amazon clone using React and Zustand.
